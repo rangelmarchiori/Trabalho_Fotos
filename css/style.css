@@ -72,3 +72,15 @@ header h2
 {
     width: 100%;
 }
+
+.container
+{
+    display: flex;
+}
+.child
+{
+    width: 20%;
+    height: 200ppx;
+    background-color: rgba(1, 1, 1, 0.536);
+    border: 1px solid rgb(232, 236, 113);
+}
