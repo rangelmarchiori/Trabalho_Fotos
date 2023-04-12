@@ -9,3 +9,20 @@
     margin-right: auto;
   
 }
+.parceria
+{
+    background-color: rgba(27, 27, 27, 0.685);
+    margin-right: auto;
+    font-size: 15px;
+    text-align: left;
+    color: darkgoldenrod;
+    width: 600px;
+    height: 40px;
+    
+}
+
+.bottom
+{
+    width: 50px;
+    float: left;
+}
