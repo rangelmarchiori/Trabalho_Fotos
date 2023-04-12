@@ -1,0 +1,87 @@
+*{
+    margin: 10;
+    padding: 1;/*espessura do cabeçalho*/
+    font-family: 'Arial', sans-serif;
+    color: aliceblue;
+    margin-top: 1px;/*deicar o cabeçaljo grudado no topo*/
+    
+}
+body{
+    background-image: url('../images/imagemfundo.jpg');
+    background-repeat: no-repeat;/* n repetir a imagem*/
+    background-size: cover; /* imagem cobrir tudo*/
+    font-size: 22px; /*fonte de toda pagina*/
+    
+}
+
+.cabecalho{
+    
+    background-color: black; /*Para colocar cor da div do cabeçalho*/
+    text-align: center; /*Deixar o texto de dentro do cabeçalho no centro*/
+    margin-left: 0px;/*do background-color a lateral*/
+    margin-block: 2px;/*magin do cabeçalho ao topo*/
+    
+}
+
+.colEsq{
+    float:left;/*ir mais pra baixo*/
+    width: 40%;/*tamanho da div*/
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color:aliceblue;
+    padding-top: 10px;/*distancias a imagem da div preta*/
+    border-radius: 50px;
+    margin: 0px 0px 0px 20px;/*magin da coluna esquerda*/
+}
+
+.colEsq img{ /* da colona esuqerda eu quero mexer na imagem*/
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    padding: 12px;/*largura da borda da imagem*/
+    margin-top: 30px;/*lagura do topo da imagem até a imagem*/
+}
+
+.container{
+    display: flex; /*fez o quadradinhos ficar do lado*/
+    flex-wrap: wrap;/*fez ficar quadrado*/
+    gap: 5vw; /*deu espaçamento entre as imagens*/
+    margin-top: 0px;/*magin do topo*/ 
+    margin-left: 50vw;/*distancias a coluna esquerda do container*/
+
+}
+.items{
+    width: 240px;/*tamanho das imagens*/
+    height: 240px;/*como se fosse a altura da imagem*/
+    border: 10px solid black;
+    box-shadow: 5px 5px 5px rgb(60, 56, 56);/*deixa um escurinho na borda*/
+    flex-grow: 1;/*cresce a imagem*/
+    transition: transform 1s linear;/*faz aumentar a imagem devagarzinho*/
+}
+
+.items img{
+    width: 100%; /*a imagem tem q ficar 100% dentro do quadradinho em questão dos lados*/
+    height: 100%;/*a imagem fica 100% dentro do quadradinho emm questão de altura*/
+}
+
+.items:hover{
+    transform: scale(1.1);/*faz a imagem se mexer*/ 
+}
+
+.colDir{
+    float:left;
+    width: 40%;
+    margin-left: 143px;
+    margin-block: 10px;
+}
+
+.mapBox{
+    position: relative;
+    width: 50px;
+    height: 40px ;
+    background: #fff;
+}
+
+.mapBox iframe{
+    width: 700px ;
+    height: 130px;
+}
