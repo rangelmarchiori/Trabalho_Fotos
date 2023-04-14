@@ -12,17 +12,28 @@
 .parceria
 {
     background-color: rgba(27, 27, 27, 0.685);
-    margin-right: auto;
     font-size: 15px;
     text-align: left;
     color: darkgoldenrod;
     width: 600px;
-    height: 40px;
+ 
+   
+}
+
+.parceria h1 {padding: 0px;}
+    
+    
+
+.bulinha
+{
+    text-decoration: none;
+    color: black;
     
 }
 
-.bottom
+.bulinha b
 {
-    width: 50px;
-    float: left;
+    font-size: 30pt;
+    padding-top: 2px;
 }
+    
