@@ -78,13 +78,6 @@ header h2
     margin-top: 100px;
 }
 
-.balinha
-{
-    position: relative;
-    left: 0;
-    top: 0;
-}
-
 .container
 {
     display: flex;
