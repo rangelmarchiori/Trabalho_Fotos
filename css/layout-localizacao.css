@@ -7,7 +7,7 @@
     
 }
 body{
-    background-image: url('../images/imagemfundo.jpg');
+    background-image: url('../imagens/imagemfundo.jpg');
     background-repeat: no-repeat;/* n repetir a imagem*/
     background-size: cover; /* imagem cobrir tudo*/
     font-size: 22px; /*fonte de toda pagina*/
@@ -28,7 +28,6 @@ body{
     width: 40%;/*tamanho da div*/
     background-color: rgb(0, 0, 0);
     text-align: center;
-    color:aliceblue;
     padding-top: 10px;/*distancias a imagem da div preta*/
     border-radius: 50px;
     margin: 0px 0px 0px 20px;/*magin da coluna esquerda*/
@@ -36,9 +35,9 @@ body{
 
 .colEsq img{ /* da colona esuqerda eu quero mexer na imagem*/
     width: 500px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(252, 252, 252);/*cor da borda da imagem*/
     padding: 12px;/*largura da borda da imagem*/
-    margin-top: 30px;/*lagura do topo da imagem até a imagem*/
+    margin-top: 40px;/*lagura do topo da imagem até a imagem*/
 }
 
 .container{
@@ -68,20 +67,12 @@ body{
 }
 
 .colDir{
-    float:left;
-    width: 40%;
-    margin-left: 143px;
-    margin-block: 10px;
-}
-
-.mapBox{
-    position: relative;
-    width: 50px;
-    height: 40px ;
-    background: #fff;
+    float:left;/*deixar o maps na direita*/
+    margin-left: 143px; /*arratei para a direita*/
+    margin-block: 10px; /*baixei o maps*/
 }
 
 .mapBox iframe{
-    width: 700px ;
-    height: 130px;
+    width: 700px ;/*definido largura*/
+    height: 130px;/*defindo altura*/
 }

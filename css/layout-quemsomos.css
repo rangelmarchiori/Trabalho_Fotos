@@ -1,39 +1,33 @@
 body{
     background-image: url('../imagens/imagemfundo.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat; /*sem repetição de imagem*/
+    background-size: cover; /*cobrir*/
   
 }
 
-.cabecalho{
+.cabecalho{ /*quem somos*/
     font-family:Arial, Helvetica, sans-serif;
     background-color:rgb(0, 0, 0);
     text-align:left;
     color:aliceblue;
-    width: 17%;
+    width: 17%;/*tamanho do cabeçalho*/
     border-radius: 10px;
     margin: 0px 0px 0px 40px;
 }
 
 .colEsq{
-    float:left;
-    width: 40%;
+    float:left;/*esquerda*/
+    width: 40%; 
     background-color: rgb(0, 0, 0);
-    text-align: center;
     color:rgb(255, 255, 255);
-    padding-top: 0px;
     border-radius: 50px;
     margin: 0px 0px 0px 40px;
-
-    
-    
 }
 
 .card{
     background-color: rgb(0, 0, 0);
-    padding: 17px;
-    margin-top: 3px;
-    text-align:center;
+    padding: 17px;/*preenchimento*/
+    text-align:center; 
     width: 500px;
     border-radius: 50px;
     margin-left: 20px;
@@ -43,12 +37,11 @@ body{
 .colEsq img{
 
     width: 400px;
-    height: 250px;
+    height: 250px;/*altura*/
     border: 15px solid  rgb(224, 224, 231);
-    margin-top: 30px;
-    margin-left: 0px;
-    text-align: center;
-    
+    margin-top: 30px;/*margin superior*/
+    margin-left: 0px;/*margin esquerda*/
+    text-align: center;/*alinhamento do texto*/
 }
 
 .colDir{
@@ -59,7 +52,7 @@ body{
     color:aliceblue;
     margin-left: 100px;
     border-radius: 30px;
-    margin-block: 9px;
+    margin-block: 9px;/*distancia entre os cards*/
 }
 
 .imagens{
