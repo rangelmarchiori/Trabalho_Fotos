@@ -104,7 +104,20 @@ header h2
     flex-grow: 0.10;
     transition: transform 1s linear;
 }
+.child-content 
+{
+    display: none;
+    position: absolute;
+    top: 380px;
+    left: 10px;
+    font-size: 35px;
+    color: white;
+}
 .child:hover
 {
     transform: scale(1.1);
+}
+.child:hover .child-content 
+{
+    display: block;
 }
