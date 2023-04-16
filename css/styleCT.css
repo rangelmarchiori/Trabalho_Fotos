@@ -1,11 +1,140 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 .total
 {
     background-color: rgba(0, 0, 0, 0.63);
-    border-radius: 10%;
-    margin: 60pt;
-    
-   
+    border-radius: 10px;
+    margin: 50pt;
+    width: 922px;
+    height: 559px;
+    padding: 4px;
+    margin: 0 auto;
+    margin-top: 8%;
+    font-family: Arial;
+    box-shadow: 0 4px 50px 20px #000;
 }
+.icon
+{
+    padding: 42px;
+    width: 40%;
+}
+h1
+{
+    color: darkgoldenrod;
+    font-size: 40px;
+}
+h2
+{
+    color: darkgoldenrod;
+    font-size: 28px;
+}
+h3
+{
+    color: darkgoldenrod;
+    font-size: 26px;
+}
+
+p
+{
+    color: darkgoldenrod;
+    font-size: 16px;
+
+}
+
+p.aviso 
+{
+    color: darkgoldenrod;
+    font-size: 20px;
+
+}
+
+.margin-24-bottom
+{
+
+    margin-bottom: 24px;
+
+}
+
+.margin-16-bottom
+{
+
+    margin-bottom: 16px;
+
+}
+
+.margin-8-bottom
+{
+
+    margin-bottom: 8px;
+
+}
+
+.margin-24-top
+{
+
+    margin-top: 24px;
+
+}
+
+.margin-16-top
+{
+
+    margin-top: 16px;
+
+}
+
+.margin-8-top
+{
+
+    margin-top: 8px;
+
+}
+
+input
+{
+    background-color: rgba(103, 99, 99, 0.852);
+    border-radius: 8px;
+    height: 25px;
+    border: none;
+    text-indent: 16px;
+    width: 100%;
+}
+
+input:focus
+{
+    background:#3e3c3c5c;
+    outline-width: 0;
+}
+
+.icon-hr
+{
+    width: 27px;
+    border: 3px solid darkgoldenrod;
+}
+
+button
+{
+    background: black;
+    padding: 16px;
+    display: block;
+    border: none;
+    border-radius: 8px;
+    color: darkgoldenrod;
+    width: 100%;
+}
+
+label
+{
+    color: darkgoldenrod;
+    font-size: 20px;
+    display: block;
+}
+
+
 
 .img
 {
@@ -17,9 +146,4 @@
     justify-content: start;
 }
 
-.texto
-{
-    font-size: 15px;
-    float: right;
-    color: darkorange;
-}
+
