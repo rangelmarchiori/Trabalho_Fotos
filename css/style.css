@@ -14,51 +14,7 @@
 
 }
 
-header
-{
-    background-color: black;
-    height: 50px;
-    position: sticky;
-    top: 0;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
 
-header .logo
-{
-
-    width: 45px;
-    float: left;
-
-}
-
-header h2
-{
-    color: rgb(223, 190, 2);
-    padding-left: 5px;
-}
-
-.topnav
-{
-    background-color: black;
-    height: 45px;
-}
-
-.topnav a
-{
-    display: inline-block;
-    padding: 15px 20px;
-    text-decoration: none;
-    color: darkgoldenrod;
-}
-
-.div_logo
-{
-    width: 300px;
-    float: left;
-
-}
 
 .imgGrid
 {
