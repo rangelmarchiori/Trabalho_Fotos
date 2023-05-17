@@ -1,18 +1,12 @@
-.bodyS{
-    background-image: url('../imagens/imagemfundo.jpg');
-    background-repeat: no-repeat; /*sem repetição de imagem*/
-    background-size: cover; /*cobrir*/
+.text
+{
+    color: darkgoldenrod;
+    background-color: rgba(0, 0, 0, 0.455);
+    text-align: center;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
   
-}
-
-.cabecalho{ /*quem somos*/
-    font-family:Arial, Helvetica, sans-serif;
-    background-color:rgb(0, 0, 0);
-    text-align:left;
-    color:aliceblue;
-    width: 17%;/*tamanho do cabeçalho*/
-    border-radius: 10px;
-    margin: 0px 0px 0px 40px;
 }
 
 .colEsq{
