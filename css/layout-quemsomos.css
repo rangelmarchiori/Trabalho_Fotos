@@ -1,4 +1,4 @@
-body{
+.bodyS{
     background-image: url('../imagens/imagemfundo.jpg');
     background-repeat: no-repeat; /*sem repetição de imagem*/
     background-size: cover; /*cobrir*/
