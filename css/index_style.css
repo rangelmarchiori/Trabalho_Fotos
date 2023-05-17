@@ -1,37 +1,14 @@
-*{
-    box-sizing: border-box;
-}
 
-.bodyA
+body
 {
-    padding: 0;
-    margin: 0;
-    background-image: url("../imagens/fundo.jpg");
+    background-image: url("../images/fundo.jpg");
     background-size: cover;
-    /*FW*/
-    display: flex;
-    flex-direction: column;
-
-}
-
-
-
-.imgGrid
-{
-    background-color: rgba(0, 0, 0, 0.521);
-    margin: 10px;
-    text-align: center;
 }
 
 .imgIndex
 {
     width: 100%;
     height: 100%;
-}
-
-.mtop
-{
-    margin-top: 100px;
 }
 
 .container

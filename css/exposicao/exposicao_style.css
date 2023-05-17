@@ -10,7 +10,7 @@
 }
 
 body{
-    background-image: url('../imagens/imagemfundo.jpg');
+    background-image: url('../../images/imagemfundo.jpg');
     background-repeat: no-repeat;/* n repetir a imagem*/
     background-size: cover; /* imagem cobrir tudo*/
     font-size: 24px; /*fonte*/

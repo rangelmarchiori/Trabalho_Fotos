@@ -1,4 +1,11 @@
 
+body
+{
+    background-image: url("../../images/fundo.jpg");
+    background-size: cover;
+
+}
+
 .text
 {
     color: darkgoldenrod;
