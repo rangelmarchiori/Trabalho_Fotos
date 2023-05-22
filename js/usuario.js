@@ -1,7 +1,7 @@
 if(localStorage.getItem("token")== null)
 {
     alert("Você precisa estar logado para acessar essa página");
-    window.location.href ="";
+    window.location.href ="./trabalho_fotos/htmlsignin.html";
 }
 
 let userlogado = JSON.parse(localStorage.getItem("userlogado"));
@@ -13,5 +13,5 @@ function sair()
 {
     localStorage.removeItem("token");
     localStorage.removeItem("userlogado");
-    window.location.href = "";
+    window.location.href = "../htmlsignin.html";
 }

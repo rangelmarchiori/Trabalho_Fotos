@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mate SC", sans-serif;
+}
+
+body {
+  background-image: url(https://images2.alphacoders.com/261/thumb-1920-26102.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backgraund-attachment: fixed;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.card {
+  background-color: #ffffff85;
+  padding: 30px;
+  border-radius: 5%;
+  box-shadow: 3px 3px 1px 0px #00000070
+}
+
+.lembre{
+  
+    color:#6f3e0e;
+    outline: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #6f3e0e
+}
+
+.label-float input{
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 1px solid #6f3e0e;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.label-float input:focus{
+  border-bottom: 2px solid #fee389;
+}
+
+.label-float label{
+  color: #6f3e0e;
+  pointer-event: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #fee389;
+  
+}
+
+button{
+  background-color: transparent;
+  border-color: #461f0d;
+  color: #461f0d; 
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transform-border: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+button:hover{
+  border-color: #fee389;
+  background-color: none;
+  color: #fee389;
+}
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+hr{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+}
+
+p{
+  color: #461f0d;
+  font-size: 14px;
+  text-align: center;
+}
+
+a{
+  color: #2f2e21;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .2s ease-out;
+}
+
+a:hover{
+  color: #fee389;
+}
+
+.fa-eye{
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  cursor: pointer;
+  color: #6f3e0e
+}
+
+#msgError{
+  text-align: center;
+  color:#5C1604;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
