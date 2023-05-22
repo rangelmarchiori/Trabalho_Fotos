@@ -29,21 +29,6 @@ body
     width: 40%;
     float: left;
 }
-h1
-{
-    color: darkgoldenrod;
-    font-size: 40px;
-}
-h2
-{
-    color: darkgoldenrod;
-    font-size: 28px;
-}
-h3
-{
-    color: darkgoldenrod;
-    font-size: 26px;
-}
 
 p
 {
@@ -59,47 +44,7 @@ p.aviso
 
 }
 
-.margin-24-bottom
-{
 
-    margin-bottom: 24px;
-
-}
-
-.margin-16-bottom
-{
-
-    margin-bottom: 16px;
-
-}
-
-.margin-8-bottom
-{
-
-    margin-bottom: 8px;
-
-}
-
-.margin-24-top
-{
-
-    margin-top: 24px;
-
-}
-
-.margin-16-top
-{
-
-    margin-top: 16px;
-
-}
-
-.margin-8-top
-{
-
-    margin-top: 8px;
-
-}
 .img
 {
     float: right;
