@@ -1,27 +1,24 @@
 *{
-    margin: 10;
-    padding: 1;/*espessura do cabeçalho*/
-    font-family: 'Arial', sans-serif;
-    color: aliceblue;
-    margin-top: 1px;/*deicar o cabeçaljo grudado no topo*/
-    
+    margin: 0;
+    padding: 0;/*espessura do cabeçalho*/
+   
+}
+.cabecalho
+{
+    color: darkgoldenrod;
+    background-color: rgba(0, 0, 0, 0.455);
+    text-align: center;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  
 }
 body{
     background-image: url('../../images/imagemfundo.jpg');
-    background-repeat: no-repeat;/* n repetir a imagem*/
     background-size: cover; /* imagem cobrir tudo*/
-    font-size: 22px; /*fonte de toda pagina*/
-    
 }
 
-.cabecalho{
-    
-    background-color: black; /*Para colocar cor da div do cabeçalho*/
-    text-align: center; /*Deixar o texto de dentro do cabeçalho no centro*/
-    margin-left: 0px;/*do background-color a lateral*/
-    margin-block: 2px;/*magin do cabeçalho ao topo*/
-    
-}
 
 .colEsq{
     float:left;/*ir mais pra baixo*/
