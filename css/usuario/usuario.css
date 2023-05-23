@@ -23,6 +23,8 @@ body
     background-color: #ffffff80;
     padding: 30px;
     border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000060;
+    width: 400px;
 }
 
 h1{
@@ -65,7 +67,9 @@ h1{
     transition: all .3s ease-out;
 }
 
-.label-float input:focus + label{
+.label-float input:focus + label,
+.label-float input:valid + label
+{
     font-size: 13px;
     margin-top: 0;
     color:#4038a0;
@@ -83,4 +87,15 @@ button{
     cursor: pointer;
     outline: none;
     transition: all .4s ease-out;
+}
+
+button:hover{
+    background-color:#272262 ;
+    color:#fff
+}
+
+.justify-center
+{
+    display: flex;
+    justify-content: center;
 }

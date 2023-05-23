@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/usuario/usuario.css"/>
+  <link rel="stylesheet" href="../css/usuario/usuario.css" />
   <title>Usuário</title>
 </head>
 
@@ -17,33 +17,48 @@
         <h1>Cadastrar</h1>
 
         <div class="label-float">
-          <input type="text" id="Nome" placeholder="">
-          <label for="Nome">Nome</label>
+          <input type="text" id="Nome" placeholder="" required>
+          <label for="Nome">Nome Completo:</label>
         </div>
 
         <div class="label-float">
-          <input type="text" id="CPF" placeholder="">
-          <label for="CPF">CPF</label>
+          <input type="text" id="Usuario" placeholder="" required>
+          <label for="Usuario">Usuário:</label>
         </div>
 
         <div class="label-float">
-          <input type="text" id="Usuario" placeholder="">
-          <label for="Usuario">Usuario</label>
+          <input type="datetime" id="Sexo" placeholder="" readonly>
+          <label for="gender">Gênero:</label>
+          <select id="gender" name="gender">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="nao_responder">Prefiro não responder</option>
+          </select>
         </div>
 
         <div class="label-float">
-          <input type="text" id="E-mail" placeholder="">
-          <label for="E-mail">E-mail</label>
+          <input type="text" id="CPF" placeholder="" required>
+          <label for="CPF">CPF:</label>
         </div>
 
         <div class="label-float">
-          <input type="text" id="Senha" placeholder="">
-          <label for="Senha">Senha</label>
+          <input type="datetime-local" id="DataNascimento" placeholder="" required>
+          <label for="DataNascimento">Data de Nascimento:</label>
         </div>
 
         <div class="label-float">
-          <input type="text" id="Confirmar senha" placeholder="">
-          <label for="Confirmar senha">Confirmar senha</label>
+          <input type="email" id="E-mail" placeholder="" required>
+          <label for="E-mail">E-mail:</label>
+        </div>
+
+        <div class="label-float">
+          <input type="password" id="Senha" placeholder="" required>
+          <label for="Senha">Senha:</label>
+        </div>
+
+        <div class="label-float">
+          <input type="password" id="Confirmar senha" placeholder="" required>
+          <label for="Confirmar senha">Confirmar senha:</label>
         </div>
 
         <div class='justify-center'>

@@ -9,15 +9,42 @@
   </head>
 
   <body>
-    <form>
-      <h3>LOGIN</h3>
-      <input type="text" nome="email" placeholder="seu e-mail..." />
-      <input type="passaword" nome="senha" placeholder="Sua senha..." />
-      <input type="submit" nome="acao" value="Enviar" />
-      <pB> Nâo tem uma conta?</pB>
-      <a href="https://cdpn.io/debug/NwdGRgk/bzrQWKdyRyQk">
-        Cadastre-se</a>
-      </a>
-    </form>
+    <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+      </head>
+      
+      <body>
+      
+      <div class='container'>
+        <div class='card'>
+          <h1> Entrar </h1>
+          
+          <div id='msgError'></div>
+          
+          <div class='label-float'>
+            <input type='text' id='usuario' paceholder='' required>
+            <label id='userLabel' for='usuario'>Usuario</label>
+          </div>
+          
+          <div class='label-float'>
+            <input type='password' id='senha' paceholder='' required>
+            <label id='senhaLabel' for='senha'>Senha</label>
+          </div>
+          
+          <div class='justify-center'>
+            <button onclick='entrar()'>Entrar</button>
+          </div>
+          
+          <div class='justify-center'>
+            <hr>
+          </div>
+          
+          <p> Não tem uma conta?
+            <a href=http://127.0.0.1:5500/html/usuario.html>
+           Cadastre-se</a>
+          </p>
+          
+        </div>
+      </body>
   </body>
 </html>
