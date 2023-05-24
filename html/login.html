@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/singin/singuin.css"/>
+    <link rel="stylesheet" href="../css/login/login.css"/>
     <title>LOGIN</title>
   </head>
 
@@ -22,7 +22,7 @@
           <div id='msgError'></div>
           
           <div class='label-float'>
-            <input type='text' id='usuario' paceholder='' required>
+            <input type='text' id='usuario' paceholder='usuario' required>
             <label id='userLabel' for='usuario'>Usuario</label>
           </div>
           
@@ -35,15 +35,24 @@
             <button onclick='entrar()'>Entrar</button>
            
           </div>
-          
-          <div class='justify-center'>
-            <hr>
-          </div>
+
+          <script>
+            function logar()
+            {
+              var usuario = document.getElementById("usuario").value;
+              var senha = document.getElementById("senha").value;
+
+              if(login =="admim" && senha =="admim")
+              alert('Sucesso');
+            }
+          </script>
           
           <p> Não tem uma conta?
             <a href=http://127.0.0.1:5500/html/usuario.html>
            Cadastre-se</a>
           </p>
+
+          
           
         </div>
       </body>

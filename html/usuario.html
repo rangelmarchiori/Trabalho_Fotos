@@ -11,60 +11,61 @@
 
 <body>
 
-  <body>
-    <div class="container">
-      <div class="card">
-        <h1>Cadastrar</h1>
 
-        <div class="label-float">
-          <input type="text" id="Nome" placeholder="" required>
-          <label for="Nome">Nome Completo:</label>
-        </div>
+  <div class="container">
+    <div class="card">
+      <h1>Cadastrar</h1>
 
-        <div class="label-float">
-          <input type="text" id="Usuario" placeholder="" required>
-          <label for="Usuario">Usuário:</label>
-        </div>
+      <div class="label-float">
+        <input type="text" id="Nome" placeholder="" required>
+        <label id="labelNome" for="Nome">Nome Completo:</label>
+      </div>
 
-        <div class="label-float">
-          <input type="datetime" id="Sexo" placeholder="" readonly>
-          <label for="gender">Gênero:</label>
-          <select id="gender" name="gender">
-            <option value="masculino">Masculino</option>
-            <option value="feminino">Feminino</option>
-            <option value="nao_responder">Prefiro não responder</option>
-          </select>
-        </div>
+      <div class="label-float">
+        <input type="text" id="Usuario" placeholder="" required>
+        <label id="labelUsuario" for="Usuario">Usuário:</label>
+      </div>
 
-        <div class="label-float">
-          <input type="text" id="CPF" placeholder="" required>
-          <label for="CPF">CPF:</label>
-        </div>
+      <div class="label-float">
+        <input type="datetime" id="Sexo" placeholder="" readonly>
+        <label id="labelSexo" for="gender">Gênero:</label>
+        <select id="gender" name="gender">
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="nao_responder">Prefiro não responder</option>
+        </select>
+      </div>
 
-        <div class="label-float">
-          <input type="datetime-local" id="DataNascimento" placeholder="" required>
-          <label for="DataNascimento">Data de Nascimento:</label>
-        </div>
+      <div class="label-float">
+        <input type="text" id="CPF" placeholder="" required>
+        <label id="labelCPF" for="CPF">CPF:</label>
+      </div>
 
-        <div class="label-float">
-          <input type="email" id="E-mail" placeholder="" required>
-          <label for="E-mail">E-mail:</label>
-        </div>
+      <div class="label-float">
+        <input type="datetime-local" id="DataNascimento" placeholder="" required>
+        <label id="labelData" for="DataNascimento">Data de Nascimento:</label>
+      </div>
 
-        <div class="label-float">
-          <input type="password" id="Senha" placeholder="" required>
-          <label for="Senha">Senha:</label>
-        </div>
+      <div class="label-float">
+        <input type="email" id="E-mail" placeholder="" required>
+        <label id="labelEmail" for="E-mail">E-mail:</label>
+      </div>
 
-        <div class="label-float">
-          <input type="password" id="Confirmar senha" placeholder="" required>
-          <label for="Confirmar senha">Confirmar senha:</label>
-        </div>
+      <div class="label-float">
+        <input type="password" id="Senha" placeholder="" required>
+        <label id="labelSenha" for="Senha">Senha:</label>
+      </div>
 
-        <div class='justify-center'>
-          <button>Cadastrar</button>
-        </div>
-  </body>
+      <div class="label-float">
+        <input type="password" id="Confirmar senha" placeholder="" required>
+        <label id="labelConfirme" for="Confirmar senha">Confirmar senha:</label>
+      </div>
+
+      <div class='justify-center'>
+        <button onclick='cadastrar()'>Cadastrar</button>
+        
+      </div>
+
 </body>
 
 </html>
