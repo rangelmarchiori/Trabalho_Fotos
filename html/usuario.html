@@ -17,7 +17,13 @@
       <h1>Cadastrar</h1>
 
       <div class="label-float">
-        <input type="text" id="Nome" placeholder="" required minlength="5" maxlength="100">
+        <input type="text" id="Nome" 
+        class="form-control"  
+        placeholder="" 
+        aria-label="Nome" 
+        name="Nome"
+        required minlength="5" 
+        maxlength="100">
         <label id="labelNome" for="Nome">Nome Completo:</label>
       </div>
 
@@ -26,15 +32,14 @@
         <label id="labelUsuario" for="Usuario">Usuário:</label>
       </div>
 
-      <div class="label-float">
-        <input type="datetime" id="Sexo" placeholder="" readonly>
         <label id="labelSexo" for="gender">Gênero:</label>
-        <select id="gender" name="gender">
-          <option value="masculino">Masculino</option>
-          <option value="feminino">Feminino</option>
-          <option value="nao_responder">Prefiro não responder</option>
-        </select>
-      </div>
+        <form action="" name="formulario">
+          <input type="radio" name="habilita" id="sim" value="sim" 
+          onclick="HabilitarCampo(1)">Masculino
+          <input type="radio" name="habilita" id="não" value="não" 
+          checked onclick="HabilitarCampo(0)">Feminino
+       </form>
+      
 
       <div class="label-float">
         <input type="text" id="CPF" placeholder="" minlength="11" maxlength="14" required>

@@ -1,22 +1,19 @@
 *{
-    margin: 10;
-    padding: 1;/*espessura do cabeçalho*/
-    font-family: 'Arial', sans-serif;
-    color: aliceblue;
-    margin-top: 1px;/*deicar o cabeçaljo grudado no topo*/
-    
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
+
 body{
     background-image: url('../../images/imagemfundo.jpg');
     background-repeat: no-repeat;/* n repetir a imagem*/
     background-size: cover; /* imagem cobrir tudo*/
-    font-size: 22px; /*fonte de toda pagina*/
-    
+  
 }
 
 .cabecalho{
-    
-    background-color: black; /*Para colocar cor da div do cabeçalho*/
+    color: darkgoldenrod;
+    background-color: rgba(0, 0, 0, 0.455);
     text-align: center; /*Deixar o texto de dentro do cabeçalho no centro*/
     margin-left: 0px;/*do background-color a lateral*/
     margin-block: 2px;/*magin do cabeçalho ao topo*/
@@ -26,6 +23,7 @@ body{
 .colEsq{
     float:left;/*ir mais pra baixo*/
     width: 40%;/*tamanho da div*/
+    color: rgb(253, 253, 253);
     background-color: rgb(0, 0, 0);
     text-align: center;
     padding-top: 10px;/*distancias a imagem da div preta*/
@@ -73,6 +71,7 @@ body{
 }
 
 .mapBox iframe{
-    width: 700px ;/*definido largura*/
+    margin-left: 650px;
+    width: 770px;/*definido largura*/
     height: 130px;/*defindo altura*/
 }

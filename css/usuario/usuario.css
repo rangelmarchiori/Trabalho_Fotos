@@ -75,7 +75,7 @@ h1{
 {
     font-size: 13px;
     margin-top: 0;
-    color:#ffffff;
+    color:#000000;
 }
 
 button{
@@ -101,4 +101,9 @@ button:hover{
 {
     display: flex;
     justify-content: center;
+}
+
+form
+{
+    margin-top: 9px;
 }

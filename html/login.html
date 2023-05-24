@@ -22,12 +22,12 @@
           <div id='msgError'></div>
           
           <div class='label-float'>
-            <input type='text' id='usuario' paceholder='usuario' required>
+            <input type='text' id='usuario' paceholder='usuario' required minlength="5" maxlength="100">
             <label id='userLabel' for='usuario'>Usuario</label>
           </div>
           
           <div class='label-float'>
-            <input type='password' id='senha' paceholder='senha' required>
+            <input type='password' id='senha' paceholder='senha' required minlength="5" maxlength="100">
             <label id='senhaLabel' for='senha'>Senha</label>
           </div>
           
@@ -39,8 +39,11 @@
           <p> Não tem uma conta?
             <a href=http://127.0.0.1:5500/html/usuario.html>Cadastre-se</a>
           </p>
-
+          
         </div>
       </body>
+
+      <script src="../js/login.js"></script>
+
   </body>
 </html>
