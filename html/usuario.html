@@ -17,12 +17,12 @@
       <h1>Cadastrar</h1>
 
       <div class="label-float">
-        <input type="text" id="Nome" placeholder="" required>
+        <input type="text" id="Nome" placeholder="" required minlength="5" maxlength="100">
         <label id="labelNome" for="Nome">Nome Completo:</label>
       </div>
 
       <div class="label-float">
-        <input type="text" id="Usuario" placeholder="" required>
+        <input type="text" id="Usuario" placeholder="" required minlength="5" maxlength="100">
         <label id="labelUsuario" for="Usuario">Usuário:</label>
       </div>
 
@@ -37,33 +37,32 @@
       </div>
 
       <div class="label-float">
-        <input type="text" id="CPF" placeholder="" required>
+        <input type="text" id="CPF" placeholder="" minlength="11" maxlength="14" required>
         <label id="labelCPF" for="CPF">CPF:</label>
       </div>
 
       <div class="label-float">
-        <input type="datetime-local" id="DataNascimento" placeholder="" required>
+        <input type="datetime-local" id="DataNascimento" placeholder="">
         <label id="labelData" for="DataNascimento">Data de Nascimento:</label>
       </div>
 
       <div class="label-float">
-        <input type="email" id="E-mail" placeholder="" required>
+        <input type="email" id="E-mail" placeholder="" required minlength="5" maxlength="100">
         <label id="labelEmail" for="E-mail">E-mail:</label>
       </div>
 
       <div class="label-float">
-        <input type="password" id="Senha" placeholder="" required>
+        <input type="password" id="Senha" placeholder="" required minlength="5" maxlength="100">
         <label id="labelSenha" for="Senha">Senha:</label>
       </div>
 
       <div class="label-float">
-        <input type="password" id="Confirmar senha" placeholder="" required>
+        <input type="password" id="Confirmar senha" placeholder="" required minlength="5" maxlength="100">
         <label id="labelConfirme" for="Confirmar senha">Confirmar senha:</label>
       </div>
 
       <div class='justify-center'>
-        <button onclick='cadastrar()'>Cadastrar</button>
-        
+       <a href="http://127.0.0.1:5500/index.html"> Cadastrar</a>
       </div>
 
 </body>

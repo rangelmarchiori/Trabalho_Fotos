@@ -7,14 +7,18 @@
 body {
     background-image: url(https://img.freepik.com/fotos-gratis/3d-interior-de-quarto-grunge-com-holofotes-e-fundo-de-atmosfera-esfumacada_1048-11333.jpg?w=900&t=st=1684885316~exp=1684885916~hmac=1454fc90a76c3fb1ea2832f3e493288fb229bc6aa43ad4d75032f4b22b9d6ff6);
     background-size: cover;
-    background-attachment: fixed
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    top:50%;
+    left:50%;
+
 }
 
 .container {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 230px;
 }
 
 .card {
@@ -26,7 +30,7 @@ body {
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color:rgb(0, 0, 0);
 
 }
