@@ -1,11 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family:arial;
 }
 
 body {
-    background-image:url(../../images/imagemfundo.jpg);
+    background-image: url(https://img.freepik.com/fotos-gratis/3d-interior-de-quarto-grunge-com-holofotes-e-fundo-de-atmosfera-esfumacada_1048-11333.jpg?w=900&t=st=1684885316~exp=1684885916~hmac=1454fc90a76c3fb1ea2832f3e493288fb229bc6aa43ad4d75032f4b22b9d6ff6);
     background-size: cover;
     background-attachment: fixed
 }
@@ -21,13 +21,14 @@ body {
     background-color: #ffffff80;
     padding: 30px;
     border-radius: 4%;
-    box-shadow: 3px 3px 1px 0px #00000060
+    box-shadow: 5px 5px 5px 5px #00000060
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #272262
+    color:rgb(0, 0, 0);
+
 }
 
 .label-float input {
@@ -35,7 +36,7 @@ h1 {
     padding: 5px 5px;
     display: inline-block;
     border: 0;
-    border-bottom: 2px solid #272262;
+    border-bottom: 2px solid #000000;
     background-color: transparent;
     outline: none;
     min-width: 180px;
@@ -53,11 +54,12 @@ h1 {
 }
 
 .label-float input:focus {
-    border-bottom: 2px solid #4038a0;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    
 }
 
 .label-float label {
-    color: #272262;
+    color: rgb(0, 0, 0);
     pointer-events: none;
     position: absolute;
     top: 0;
@@ -70,13 +72,13 @@ h1 {
 .label-float input:valid+label {
     font-size: 13px;
     margin-top: 0;
-    color: #4038a0
+    color: #000000
 }
 
 button {
     background-color: transparent;
-    border-color: #272262;
-    color: #272262;
+    border-color: #000000;
+    color: #2600ff;
     padding: 7px;
     font-weight: bold;
     font-size: 12pt;
@@ -88,7 +90,7 @@ button {
 }
 
 button:hover {
-    background-color: #272262;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -104,13 +106,13 @@ hr {
 }
 
 p {
-    color: #272262;
+    color: #000000;
     font-size: 14pt;
     text-align: center;
 }
 
 a {
-    color: #7a3077;
+    color: #000dff;
     font-weight: bold;
     text-decoration: none;
     transition: all .3s ease-out;
