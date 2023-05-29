@@ -18,50 +18,53 @@
 
       <div class="label-float">
         <input type="text" id="Nome" class="form-control" placeholder="" aria-label="Nome" name="Nome" required
-          minlength="2" maxlength="100" data-getInput>
+          minlength="2" maxlength="100" data-getInput> 
         <label id="labelNome" for="Nome">Nome Completo:</label>
+        <span class="mensagem-erro" data-erro></span>
       </div>
 
       <div class="label-float">
-        <input type="text" id="Usuario" placeholder="" required minlength="5" maxlength="100" data-getInput>
+        <input type="text" id="Usuario" placeholder="" required minlength="5" maxlength="100" data-getInput >
         <label id="labelUsuario" for="Usuario">Usuário:</label>
+        <span class="mensagem-erro" data-erro></span>
       </div>
 
       <div class="label">
         <label id="labelSexo" for="sexo">Sexo: </label>
         <form action="" name="formulario">
-          <input type="radio" name="habilita" id="sim" value="sim" onclick="HabilitarCampo(1)">Masculino
-          <input type="radio" name="habilita" id="não" value="não" checked onclick="HabilitarCampo(0)">Feminino
+          <input type="radio" name="habilita" id="sim" value="sim" onclick="HabilitarCampo(1)">Masculin <span class="mensagem-erro" data-erro></span>
+          <input type="radio" name="habilita" id="não" value="não" checked onclick="HabilitarCampo(0)">Feminino <span class="mensagem-erro" data-erro></span>
         </form>
       </div>
 
       <div class="label-float">
         <input type="text" id="CPF" placeholder="" minlength="11" maxlength="14" required data-getInput>
         <label id="labelCPF" for="CPF">CPF:</label>
+        <span class="mensagem-erro" data-erro></span>
       </div>
 
       <div class="label-float">
         <input type="datetime-local" id="DataNascimento" placeholder="" data-getInput>
         <label id="labelData" for="DataNascimento">Data de Nascimento:</label>
-
+        <span class="mensagem-erro" data-erro></span>
       </div>
 
       <div class="label-float">
-        <input type="email" id="Email" placeholder="" required minlength="5" maxlength="100" data-getInput>
+        <input type="email" id="Email" placeholder="" required minlength="5" maxlength="100" data-getInput> 
         <label id="labelEmail" for="Email">E-mail:</label>
-
+        <span class="mensagem-erro" data-erro></span>
       </div>
 
       <div class="label-float">
-        <input type="password" id="Senha" placeholder="" required minlength="5" maxlength="100" data-getInput>
+        <input type="password" id="Senha" placeholder="" required minlength="5" maxlength="100" data-getInput> 
         <label id="labelSenha" for="Senha">Senha:</label>
-
+        <span class="mensagem-erro" data-erro></span>
       </div>
 
       <div class="label-float">
-        <input type="password" id="ConfirmSenha" placeholder="" required minlength="5" maxlength="100" data-getInput>
+        <input type="password" id="ConfirmSenha" placeholder="" required minlength="5" maxlength="100" data-getInput> 
         <label id="labelConfirme" for="ConfirmSenha">Confirmar senha:</label>
-
+        <span class="mensagem-erro" data-erro></span>
       </div>
 
       <div class='justify-center'>
