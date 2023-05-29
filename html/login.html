@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/login/login.css" />
+  <title>LOGIN</title>
+</head>
+
+<body>
+
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/login/login.css"/>
-    <title>LOGIN</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
-  <body>
-    <head>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
-      </head>
-      
-      <body>
-      
-      <div class='container'>
-        <div class='card'>
-          <h1> Login </h1>
-          
-          <div id='msgError'></div>
-          
-          <div class='label-float'>
-            <input type='text' id='usuario' paceholder='usuario' required minlength="5" maxlength="100">
-            <label id='userLabel' for='usuario'>Usuario</label>
-          </div>
-          
-          <div class='label-float'>
-            <input type='password' id='senha' paceholder='senha' required minlength="5" maxlength="100">
-            <label id='senhaLabel' for='senha'>Senha</label>
-          </div>
-          
-          <div class='justify-center'>
-            <button onclick='entrar()'>Entrar</button>
-           
-          </div>
+  <div class='container'>
+    <div class='card'>
+      <h1> Login </h1>
 
-          <p> Não tem uma conta?
-            <a href=http://127.0.0.1:5500/html/usuario.html>Cadastre-se</a>
-          </p>
-          
-        </div>
-      </body>
+      <div id='msgError'></div>
 
-      <script src="../js/login.js"></script>
+      <div class='label-float'>
+        <input type='text' id='usuario' paceholder='usuario' required minlength="5" maxlength="100">
+        <label id='userLabel' for='usuario'>Usuario</label>
+      </div>
 
-  </body>
+      <div class='label-float'>
+        <input type='password' id='senha' paceholder='senha' required minlength="5" maxlength="100">
+        <label id='senhaLabel' for='senha'>Senha</label>
+      </div>
+
+      <div class='justify-center'>
+        <a href="quem_somos.html">Entrar</a>
+      </div>
+
+      <p> Não tem uma conta?
+        <a href=http://127.0.0.1:5500/html/usuario.html>Cadastre-se</a>
+      </p>
+
+    </div>
+  </div>
+
+  <script src="../js/login.js"></script>
+
+</body>
+
 </html>

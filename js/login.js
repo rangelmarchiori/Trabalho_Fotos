@@ -1,9 +1,6 @@
-const inputs = document.querySelectorAll("[required]");
-
-inputs.forEach((elemento)=>
+function LockManager()
 {
-    elemento.addEventListener("blur",(evento)=>{
-        console.log("sair")
-    });
-
-});
+    var login = document.getElementById('login').value;
+    var senha  = document.getElementById('senha').value;
+    
+}
