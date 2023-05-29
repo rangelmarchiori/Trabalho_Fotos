@@ -1,53 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/top_nav.css" />
-    <link rel="stylesheet" href="../../css/Vip/styleVip.css">
-    <link rel="stylesheet" href="../../css/tamanhoDasFontes/tmnhfnt.css">
-    <link rel="stylesheet" href="../../bootstrap-5.3.0-alpha3-dist/css/bootstrap-grid.min.css">
-    <title>Cadastro Vip</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/top_nav.css" />
+  <link rel="stylesheet" href="../../css/Vip/styleVip.css">
+  <link rel="stylesheet" href="../../css/tamanhoDasFontes/tmnhfnt.css">
+  <link rel="stylesheet" href="../../bootstrap-5.3.0-alpha3-dist/css/bootstrap-grid.min.css">
+  <title>Cadastro Vip</title>
 </head>
+
 <body>
 
-    <header>
-        <div class="div_logo">
-          <img src="../../images/simbolo_logo.png" alt="logo" class="logo" />
-          <h2>DarkArt</h2>
+  <header>
+    <div class="div_logo">
+      <img src="../../images/simbolo_logo.png" alt="logo" class="logo" />
+      <h2>DarkArt</h2>
+    </div>
+    <!--Cabeçalho logo-->
+    <nav class="topnav">
+      <!--Menu-->
+      <a href="../../index.html">Home</a>
+      <a href="../quem_somos.html">Quem somos?</a>
+      <a href="../galeria.html">Galeria</a>
+      <a href="../contato.html">Contato</a>
+      <a href="../localizacao.html">Localização</a>
+      <a href="../exposicao.html">Exposição</a>
+    </nav>
+  </header>
+
+  <!-- restante da pagina -->
+  <div class="Bloco">
+    <div class="icon">
+      <img src="../../images/iconTelaVip.png" alt="Vip">
+      <h1 class="escrever">Cadastro VIP</h1>
+      <p class="aviso">Se torne um VIP</p>
+      <hr class="icon-hr margin-16-bottom margin-8-top" />
+    </div>
+
+    <div class="bloquinho">
+      <form>
+        <!-- nome -->
+        <div class="mb-3">
+          <label for="disabledTextInput" class="form-label margin-8-bottom">Nome</label>
+          <input type="text" id="Nome" class="form-control margin-16-bottom" placeholder="Disabled input" required>
+          <span class="mensagem-erro" data-erro></span>
         </div>
-        <!--Cabeçalho logo-->
-        <nav class="topnav">
-          <!--Menu-->
-          <a href="../../index.html">Home</a>
-          <a href="../quem_somos.html">Quem somos?</a>
-          <a href="../galeria.html">Galeria</a>
-          <a href="../contato.html">Contato</a>
-          <a href="../localizacao.html">Localização</a>
-          <a href="../exposicao.html">Exposição</a>
-        </nav>
-      </header>
 
-      <!-- restante da pagina -->
-      <div class="Bloco">
-          <div class="icon">
-                    <img src="../../images/iconTelaVip.png" alt="Vip">
-                    <h1 class="escrever">Cadastro VIP</h1>
-                    <p class="aviso">Se torne um VIP</p>
-                    <hr class="icon-hr margin-16-bottom margin-8-top" />
-           
+        <!-- cpf -->
+        <div class="mb-3">
+          <label for="disabledTextInput" class="form-label margin-8-bottom">Nome</label>
+          <input type="text" id="Nome" class="form-control margin-16-bottom" placeholder="Disabled input">
+        </div>
 
-                <form>
+        <!-- ceep -->
+        <div class="mb-3">
+          <label for="disabledTextInput" class="form-label margin-8-bottom">Nome</label>
+          <input type="text" id="Nome" class="form-control margin-16-bottom" placeholder="Disabled input">
+        </div>
 
-               <div class="mb-3">
-                <label for="disabledTextInput" class="form-label">Disabled input</label>
-                <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
-                </div>
-            </form>
-          </div>
+        <!-- numero do cartão -->
+        <div class="mb-3">
+          <label for="disabledTextInput" class="form-label margin-8-bottom">Nome</label>
+          <input type="text" id="Nome" class="form-control margin-16-bottom" placeholder="Disabled input">
+        </div>
 
-      </div>
-    
+
+        <div class="mb-3">
+          <label for="disabledSelect" class="form-label">Selecione o tipo de pagamento</label>
+          <select id="disabledSelect" class="form-select">
+            <option>Selecione a forma de pagamento</option>
+          </select>
+        </div>
+
+
+
+      </form>
+
+
+    </div>
+
+  </div>
+
 </body>
+
 </html>

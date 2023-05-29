@@ -25,7 +25,7 @@ body
 /* imagem da div */
 .icon
 {
-    padding: 42px;
+    padding: 45px;
     width: 40%;
     display: inline-block;
     
@@ -56,6 +56,36 @@ p.aviso
 {
 
     display: inline-block;
+    padding: 0;
+    margin: 0;
     
-    
+}
+
+input
+{
+    background-color: rgba(103, 99, 99, 0.852);
+    border-radius: 8px;
+    height: 25px;
+    border: none;
+    text-indent: 16px;
+    width: 100%;
+}
+
+input:focus
+{
+    background:#3e3c3c5c;
+    outline-width: 0;
+}
+
+label
+{
+    color: darkgoldenrod;
+    font-size: 20px;
+    display: block;
+}
+
+.bloquinho
+{
+    width: 50%;
+
 }
