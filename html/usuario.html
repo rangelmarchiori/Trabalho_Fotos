@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../css/usuario/usuario.css" />
-  <link rel="stylesheet" href="../js/usuario.js"/>
   <title>Usuário</title>
 </head>
 
@@ -18,80 +17,60 @@
       <h1>Cadastrar</h1>
 
       <div class="label-float">
-        <input type="text" id="Nome" 
-        class="form-control"  
-        placeholder="" 
-        aria-label="Nome" 
-        name="Nome"
-        required minlength="2" 
-        maxlength="100">
+        <input type="text" id="Nome" class="form-control" placeholder="" aria-label="Nome" name="Nome" required
+          minlength="2" maxlength="100" data-getInput>
         <label id="labelNome" for="Nome">Nome Completo:</label>
       </div>
 
       <div class="label-float">
-        <input type="text" 
-        id="Usuario" 
-        placeholder="" 
-        required minlength="5" 
-        maxlength="100">
-        <label id="labelUsuario" 
-        for="Usuario">Usuário:</label>
+        <input type="text" id="Usuario" placeholder="" required minlength="5" maxlength="100" data-getInput>
+        <label id="labelUsuario" for="Usuario">Usuário:</label>
       </div>
 
-        <label 
-        id="labelSexo" 
-        for="sexo">Sexo:</label>
-        <form action="" 
-        name="formulario">
-          <input type="radio" 
-          name="habilita" 
-          id="sim" 
-          value="sim" 
-          onclick="HabilitarCampo(1)">Masculino
-          <input type="radio" 
-          name="habilita" 
-          id="não" 
-          value="não" 
-          checked onclick="HabilitarCampo(0)">Feminino
-       </form>
-      
-
-      <div class="label-float">
-        <input type="text" 
-        id="CPF" 
-        placeholder="" 
-        minlength="11" 
-        maxlength="14" 
-        required>
-        <label id="labelCPF" 
-        for="CPF">CPF:</label>
+      <div class="label">
+        <label id="labelSexo" for="sexo">Sexo: </label>
+        <form action="" name="formulario">
+          <input type="radio" name="habilita" id="sim" value="sim" onclick="HabilitarCampo(1)">Masculino
+          <input type="radio" name="habilita" id="não" value="não" checked onclick="HabilitarCampo(0)">Feminino
+        </form>
       </div>
 
       <div class="label-float">
-        <input type="datetime-local" id="DataNascimento" placeholder="">
+        <input type="text" id="CPF" placeholder="" minlength="11" maxlength="14" required data-getInput>
+        <label id="labelCPF" for="CPF">CPF:</label>
+      </div>
+
+      <div class="label-float">
+        <input type="datetime-local" id="DataNascimento" placeholder="" data-getInput>
         <label id="labelData" for="DataNascimento">Data de Nascimento:</label>
+
       </div>
 
       <div class="label-float">
-        <input type="email" id="Email" placeholder="" required minlength="5" maxlength="100">
+        <input type="email" id="Email" placeholder="" required minlength="5" maxlength="100" data-getInput>
         <label id="labelEmail" for="Email">E-mail:</label>
+
       </div>
 
       <div class="label-float">
-        <input type="password" id="Senha" placeholder="" required minlength="5" maxlength="100">
+        <input type="password" id="Senha" placeholder="" required minlength="5" maxlength="100" data-getInput>
         <label id="labelSenha" for="Senha">Senha:</label>
+
       </div>
 
       <div class="label-float">
-        <input type="password" id="ConfirmSenha" placeholder="" required minlength="5" maxlength="100">
+        <input type="password" id="ConfirmSenha" placeholder="" required minlength="5" maxlength="100" data-getInput>
         <label id="labelConfirme" for="ConfirmSenha">Confirmar senha:</label>
+
       </div>
 
       <div class='justify-center'>
-       <a href="http://127.0.0.1:5500/index.html">Cadastrar</a>
+        <a href="../index.html">Cadastrar</a>
       </div>
     </div>
   </div>
+
+  <script src="../js/usuario.js"></script>
 </body>
 
 </html>
