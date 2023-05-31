@@ -42,7 +42,7 @@ h1{
     display: inline-block;
     border: 0;
     border-bottom: 2px solid#000000;
-    background-color: transparent;
+    background-color:transparent;
     outline: none;
     min-width: 180px;
     font-size: 16px;
@@ -81,7 +81,7 @@ h1{
 button{
     background-color: transparent;
     border-color: #000000;
-    color:#1900ff;
+    color:#000000;
     padding: 7px;
     font-weight: bold;
     font-size: 12pt;
@@ -106,4 +106,10 @@ button:hover{
 form
 {
     margin-top: 9px;
+}
+
+
+
+.label-S input{
+    margin-left:23px;
 }
