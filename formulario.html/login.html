@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/login/login.css" />
+  <title>LOGIN</title>
+</head>
+
+<body>
+
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <div class='container'>
+    <form action="../index.html">
+      <div class='card'>
+        <h1> Login </h1>
+
+        <div id='msgError'></div>
+
+        <div class='label-float'>
+          <input type='text' id='usuario' paceholder='usuario' required minlength="1" maxlength="100">
+          <label id='userLabel' for='usuario'>Usuario</label>
+        </div>
+
+        
+
+        <div class="label-float">
+          <input type="password" id="senha" placeholder=" " required>
+          <label id="labelSenha" for="senha">Senha</label>
+          <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+
+          <div class='justify-center'>
+            <button type="submit">Entrar</button>
+          </div>
+
+          <p> Não tem uma conta?
+            <a href="../html/usuario.html">Cadastre-se</a>
+          </p>
+        </div>
+      </div>
+    </form>
+
+    <script src="../js/login.js"></script>
+
+</body>
+
+</html>
