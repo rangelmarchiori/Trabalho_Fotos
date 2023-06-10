@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../../css/Vip/styleVip.css">
   <link rel="stylesheet" href="../../css/tamanhoDasFontes/tmnhfnt.css">
   <link rel="stylesheet" href="../../bootstrap-5.3.0-alpha3-dist/css/bootstrap-grid.min.css">
+ 
   <title>Cadastro Vip</title>
 </head>
 
@@ -45,38 +46,68 @@
         <!-- nome -->
         <div class="mb-3">
           <label for="disabledTextInput" class="form-label margin-8-bottom">Nome</label>
-          <input type="text" id="Nome" class="form-control margin-16-bottom" placeholder="Disabled input" required>
+          <input type="text" id="Nome" class="form-control margin-16-bottom" placeholder="" required >
           <span class="mensagem-erro" data-erro></span>
         </div>
 
         <!-- Data de Nascimento -->
         <div class="mb-3">
           <label for="disabledTextInput" class="form-label margin-8-bottom">Data de Nascimento</label>
-          <input type="text" id="Nome" class="form-control margin-16-bottom" placeholder="Disabled input">
+          <input type="text" id="dtNascimento" class="form-control margin-16-bottom" placeholder="" required >
         </div>
 
         <!-- Cartão -->
         <div class="mb-3">
           <label for="disabledTextInput" class="form-label margin-8-bottom">Cartão</label>
-          <input type="text" id="Nome" class="form-control margin-16-bottom" placeholder="Disabled input">
+          <input type="text" id="cartao" class="form-control margin-16-bottom" placeholder="" required>
         </div>
 
         <!-- Data de Validade -->
         <div class="mb-3">
           <label for="disabledTextInput" class="form-label margin-8-bottom">Data de Validade</label>
-          <input type="text" id="Nome" class="form-control margin-16-bottom" placeholder="Disabled input">
+          <input type="text" id="dtValidade" class="form-control margin-16-bottom" placeholder="" required>
         </div>
 
         <!-- Codigo de Segurança -->
         <div class="mb-3">
           <label for="disabledTextInput" class="form-label margin-8-bottom">Codigo de Segurança</label>
-          <input type="text" id="Nome" class="form-control margin-16-bottom" placeholder="Disabled input">
+          <input type="text" id="cdSegurança" class="form-control margin-16-bottom" placeholder="" required>
         </div>
 
+        <!-- CPF -->
+        <div class="mb-3">
+          <label for="disabledTextInput" class="form-label margin-8-bottom">CPF</label>
+          <input type="text" id="cpf" class="form-control margin-16-bottom" placeholder="" required>
+        </div>
 
+        <!-- endereço -->
+        <div class="mb-3">
+          <label for="disabledTextInput" class="form-label margin-8-bottom">endereço</label>
+          <input type="text" id="endereco" class="form-control margin-16-bottom" placeholder="" required>
+        </div>
+
+        <!-- Numero  -->
+        <div class="mb-3">
+          <label for="disabledTextInput" class="form-label margin-8-bottom">N°</label>
+          <input type="text" id="numero" class="form-control margin-16-bottom" placeholder="" required>
+        </div>
+
+        <!-- BAIRRO  -->
+        <div class="mb-3">
+          <label for="disabledTextInput" class="form-label margin-8-bottom">Bairro</label>
+          <input type="text" id="bairro" class="form-control margin-16-bottom" placeholder="" required>
+        </div>
+
+         <!-- ceep -->
+         <div class="mb-3">
+          <label for="disabledTextInput" class="form-label margin-8-bottom">CEEP</label>
+          <input type="text" id="ceep" class="form-control margin-16-bottom" placeholder="" required>
+        </div>
+
+        <!-- Selecione o tipo de pagamento -->
         <div class="mb-3">
           <label for="disabledSelect" class="form-label">Selecione o tipo de pagamento</label>
-          <select id="disabledSelect" class="form-select">
+          <select id="slctpPag" class="form-select">
             <option>Selecione a forma de pagamento</option>
           </select>
         </div>
@@ -88,8 +119,13 @@
 
     </div>
 
-  </div>
+    <div >
+      <img class="caveira" src="../../images/Caveira.jpg" alt="Caveira">
+    </div>
 
+  </div>
+ 
+  <script src="../../js/VIP"></script>
 </body>
 
 </html>

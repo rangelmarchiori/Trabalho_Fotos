@@ -1,3 +1,20 @@
+const input = document.querySelector('[cpf]')
+
+input.addEventListener('keypress', () =>
+{
+    let inputlength = input.value.length
+
+    if(inputlength === 3 ,inputlength === 7)
+    {
+        input.value += '.'
+    }
+    else if(inputlength === 11)
+    {
+        input.value += '-'
+    }
+})
+
+
 const inputs = document.querySelectorAll("[required]")
 inputs.forEach((elemento)=>
 {
@@ -6,6 +23,8 @@ inputs.forEach((elemento)=>
         validaCampo(evento.target)
     })
 })
+
+
 
 function validaCampo(campo)
 {
