@@ -1,8 +1,9 @@
+const btn = document.querySelector('#verSenha');
+
 function LockManager() 
 {
     var login = document.getElementById('login').value;
     var senha = document.getElementById('senha').value;
-    var email = document.getElementById('email').value;
 }
 
 
