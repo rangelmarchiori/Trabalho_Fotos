@@ -29,7 +29,7 @@ function validateField(field) {
 }
 
 function validateCelular() {
-    if (celular.value.length <= 10) {
+    if (celular.value.length <= 14) {
         labelcelular.setAttribute('style', 'color: red');
         labelcelular.innerHTML = 'Celular: *Insira no mínimo 11 caracteres';
         celular.setAttribute('style', 'border-color: red');
@@ -231,48 +231,6 @@ cpf.addEventListener('input', (event) => {
     cpf = formatarCPF(cpf);
     input.value = cpf;
 });
-
-function validateEmail() {
-    if (email.value.length <= 7 || !validarEmail(email.value)) {
-        labelemail.setAttribute('style', 'color: red');
-        labelemail.innerHTML = 'E-mail: *Insira um e-mail válido';
-        email.setAttribute('style', 'border-color: red');
-        return false;
-    } else {
-        labelemail.setAttribute('style', 'color: green');
-        labelemail.innerHTML = 'E-mail:';
-        email.setAttribute('style', 'border-color: green');
-        return true;
-    }
-}
-
-function validateCelular() {
-    if (celular.value.length <= 10) {
-        labelcelular.setAttribute('style', 'color: red');
-        labelcelular.innerHTML = 'Celular: *Insira no mínimo 11 caracteres';
-        celular.setAttribute('style', 'border-color: red');
-        return false;
-    } else {
-        labelcelular.setAttribute('style', 'color: green');
-        labelcelular.innerHTML = 'Celular:';
-        celular.setAttribute('style', 'border-color: green');
-        return true;
-    }
-}
-
-function validateDataNasc() {
-    if (dataNasc.value.length <= 9) {
-        labeldataNasc.setAttribute('style', 'color: red');
-        labeldataNasc.innerHTML = 'Data Nascimento: *Insira sua data de Nascimento';
-        dataNasc.setAttribute('style', 'border-color: red');
-        return false;
-    } else {
-        labeldataNasc.setAttribute('style', 'color: green');
-        labeldataNasc.innerHTML = 'Data Nascimento:';
-        dataNasc.setAttribute('style', 'border-color: green');
-        return true;
-    }
-}
 
 function validarCpf(cpf) {
     cpf = cpf.replace(/\D/g, '');
