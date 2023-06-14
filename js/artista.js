@@ -1,10 +1,11 @@
+
 const fields = [
     { input: document.querySelector('#nome'), label: document.querySelector('#labelNome'), minLength: 3 },
     { input: document.querySelector('#sobrenome'), label: document.querySelector('#labelsobrenome'), minLength: 3 },
-    { input: document.querySelector('#nomeArtistico'), label: document.querySelector('#labelNomeArtistico'), minLength: 6 },
+    { input: document.querySelector('#nomeArtistico'), label: document.querySelector('#labelNomeArtistico'), minLength: 3 },
     { input: document.querySelector('#cidadeNatal'), label: document.querySelector('#labelcidadeNatal'), minLength: 6 },
-    { input: document.querySelector('#dataNasc'), label: document.querySelector('#labeldataNasc'), minLength: 11 },
-    { input: document.querySelector('#dataFale'), label: document.querySelector('#labeldataFale') },
+    { input: document.querySelector('#movimentoArtistico'), label: document.querySelector('#labelmovimentoArtistico') },
+    { input: document.querySelector('#dataNasc'), label: document.querySelector('#labeldataNasc'), minLength: 7},
     { input: document.querySelector('#descricao'), label: document.querySelector('#labeldescricao') }
 ];
 
@@ -39,25 +40,54 @@ function validateNome() {
     }
 }
 
-function validatesobrenome() {
-    if (celular.value.length <= 14) {
-        labelcelular.setAttribute('style', 'color: red');
-        labelcelular.innerHTML = 'Celular: *Insira no mínimo 11 caracteres';
-        celular.setAttribute('style', 'border-color: red');
+function validateSobrenome() {
+    if (sobrenome.value.length <= 2) {
+        labelsobrenome.setAttribute('style', 'color: red');
+        labelsobrenome.innerHTML = 'Sobrenome: *Insira no mínimo 3 caracteres';
+        sobrenome.setAttribute('style', 'border-color: red');
         return false;
     } else {
-        labelcelular.setAttribute('style', 'color: green');
-        labelcelular.innerHTML = 'Celular:';
-        celular.setAttribute('style', 'border-color: green');
+        labelsobrenome.setAttribute('style', 'color: green');
+        labelsobrenome.innerHTML = 'Sobrenome:';
+        sobrenome.setAttribute('style', 'border-color: green');
         return true;
     }
 
 }
 
-function validateDataNasc() {
+function validatenomeArtistico() {
+    if (nomeArtistico.value.length <= 2) {
+        labelNomeArtistico.setAttribute('style', 'color: red');
+        labelNomeArtistico.innerHTML = 'Nome Artistico: *Insira no mínimo 3 caracteres';
+        nomeArtistico.setAttribute('style', 'border-color: red');
+        return false;
+    } else {
+        labelNomeArtistico.setAttribute('style', 'color: green');
+        labelNomeArtistico.innerHTML = 'Nome Artistico:';
+        nomeArtistico.setAttribute('style', 'border-color: green');
+        return true;
+    }
+}
+
+
+function validatecidadeNatal() {
+    if (cidadeNatal.value.length <= 2) {
+        labelcidadeNatal.setAttribute('style', 'color: red');
+        labelcidadeNatal.innerHTML = 'Cidade Natal: *Insira no mínimo 3 caracteres';
+        cidadeNatal.setAttribute('style', 'border-color: red');
+        return false;
+    } else {
+        labelcidadeNatal.setAttribute('style', 'color: green');
+        labelcidadeNatal.innerHTML = 'Cidade Natal:';
+        cidadeNatal.setAttribute('style', 'border-color: green');
+        return true;
+    }
+}
+
+function validatedataNasc() {
     if (dataNasc.value.length <= 9) {
         labeldataNasc.setAttribute('style', 'color: red');
-        labeldataNasc.innerHTML = 'Data Nascimento: *Insira sua data de Nascimento';
+        labeldataNasc.innerHTML = 'Data Nascimento:';
         dataNasc.setAttribute('style', 'border-color: red');
         return false;
     } else {
@@ -68,60 +98,18 @@ function validateDataNasc() {
     }
 }
 
-function validateEmail() {
-    if (email.value.length <= 7) {
-        labelemail.setAttribute('style', 'color: red');
-        labelemail.innerHTML = 'E-mail: *Insira no mínimo 8 caracteres';
-        email.setAttribute('style', 'border-color: red');
+
+
+function validatemovimentoArtistico() {
+    if (movimentoArtistico.value.length <= 9) {
+        labelmovimentoArtistico.setAttribute('style', 'color: red');
+        labelmovimentoArtistico.innerHTML = 'Movimento Artistico:';
+        movimentoArtistico.setAttribute('style', 'border-color: red');
         return false;
     } else {
-        labelemail.setAttribute('style', 'color: green');
-        labelemail.innerHTML = 'E-mail:';
-        email.setAttribute('style', 'border-color: green');
-        return true;
-    }
-}
-
-
-
-function validateUsuario() {
-    if (usuario.value.length <= 2) {
-        labelUsuario.setAttribute('style', 'color: red');
-        labelUsuario.innerHTML = 'Usuário: *Insira no mínimo 3 caracteres';
-        usuario.setAttribute('style', 'border-color: red');
-        return false;
-    } else {
-        labelUsuario.setAttribute('style', 'color: green');
-        labelUsuario.innerHTML = 'Usuário:';
-        usuario.setAttribute('style', 'border-color: green');
-        return true;
-    }
-}
-
-function validateSenha() {
-    if (senha.value.length <= 5) {
-        labelSenha.setAttribute('style', 'color: red');
-        labelSenha.innerHTML = 'Senha: *Insira no mínimo 6 caracteres';
-        senha.setAttribute('style', 'border-color: red');
-        return false;
-    } else {
-        labelSenha.setAttribute('style', 'color: green');
-        labelSenha.innerHTML = 'Senha:';
-        senha.setAttribute('style', 'border-color: green');
-        return true;
-    }
-}
-
-function validateConfirmSenha() {
-    if (senha.value != confirmSenha.value) {
-        labelConfirmSenha.setAttribute('style', 'color: red');
-        labelConfirmSenha.innerHTML = 'Confirmar Senha: *As senhas não conferem';
-        confirmSenha.setAttribute('style', 'border-color: red');
-        return false;
-    } else {
-        labelConfirmSenha.setAttribute('style', 'color: green');
-        labelConfirmSenha.innerHTML = 'Confirmar Senha:';
-        confirmSenha.setAttribute('style', 'border-color: green');
+        labelmovimentoArtistico.setAttribute('style', 'color: green');
+        labelmovimentoArtistico.innerHTML = 'Movimento Artistico:';
+        movimentoArtistico.setAttribute('style', 'border-color: green');
         return true;
     }
 }
@@ -129,12 +117,13 @@ function validateConfirmSenha() {
 function cadastrar() {
     const validations = [
         validateNome(),
-        validatesobrenome(),
+        validateSobrenome(),
         validatenomeArtistico(),
         validatecidadeNatal(),
         validatedataNasc(),
         validateDataFale(),
-        validatedescricao()
+        validatedescricao(),
+        movimentoArtistico()
     ];
 
     const isValid = validations.every(validation => validation);
@@ -144,11 +133,11 @@ function cadastrar() {
 
         listaUser.push({
             nomeCad: nome.value,
-            userCad: usuario.value,
-            senhaCad: senha.value,
-            celularCad: celular.value,
-            emailCad: email.value,
-            cpfCad: cpf.value
+            sobrenomeCad: sobrenome.value,
+            nomeArtisticoCad: nomeArtistico.value,
+            cidadeNatalCad: celular.value,
+            dataNascCad: dataNasc.value,
+            descricaoCad: descricao.value
         });
 
         localStorage.setItem('listaUser', JSON.stringify(listaUser));
@@ -157,7 +146,7 @@ function cadastrar() {
         msgSuccess.innerHTML = '<strong>Cadastrando usuário...</strong>';
         msgError.setAttribute('style', 'display: none');
         msgError.innerHTML = '';
-
+z
         setTimeout(() => {
             window.location.href = 'http://127.0.0.1:5502/index.html';
         }, 3000);
@@ -169,47 +158,30 @@ function cadastrar() {
     }
 }
 
-btn.addEventListener('click', () => {
-    let inputSenha = document.querySelector('#senha');
-
-    if (inputSenha.getAttribute('type') == 'password') {
-        inputSenha.setAttribute('type', 'text');
-    } else {
-        inputSenha.setAttribute('type', 'password');
-    }
-});
-
-btnConfirm.addEventListener('click', () => {
-    let inputConfirmSenha = document.querySelector('#confirmSenha');
-
-    if (inputConfirmSenha.getAttribute('type') == 'password') {
-        inputConfirmSenha.setAttribute('type', 'text');
-    } else {
-        inputConfirmSenha.setAttribute('type', 'password');
-    }
-});
-
 nome.addEventListener('input', (event) => {
     validateNome();
 });
 
-usuario.addEventListener('input', (event) => {
-    validateUsuario();
+sobrenome.addEventListener('input', (event) => {
+    validateSobrenome();
 });
 
-senha.addEventListener('input', (event) => {
-    validateSenha();
-});
-
-confirmSenha.addEventListener('input', (event) => {
-    validateConfirmSenha();
-});
-
-celular.addEventListener('input', (event) => {
-    validateCelular();
+nomeArtistico.addEventListener('input', (event) => {
+    validatenomeArtistico();
 });
 
 dataNasc.addEventListener('input', (event) => {
-    validateDataNasc();
+    validatedataNasc();
 });
 
+cidadeNatal.addEventListener('input', (event) => {
+    validatecidadeNatal();
+});
+
+descricao.addEventListener('input', (event) => {
+    validatedescricao();
+});
+
+movimentoArtistico.addEventListener('input', (event) => {
+    validatedescricao();
+});
