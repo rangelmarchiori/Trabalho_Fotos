@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +20,7 @@ body {
 }
 
 .card {
-    background-color: #00000080;
+    background-color: rgba(0, 0, 0, 0.63);
     padding: 30px;
     border-radius: 4%;
     box-shadow: 0 4px 50px 20px #000;
@@ -32,7 +30,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #000000
+    color: darkgoldenrod
 }
 
 .label-float input {
@@ -40,7 +38,7 @@ h1 {
     padding: 5px 5px;
     display: inline-block;
     border: 0;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid rgb(103, 99, 99, 0.852);
     background-color: transparent;
     outline: none;
     min-width: 180px;
@@ -57,11 +55,11 @@ h1 {
 }
 
 .label-float input:focus {
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid darkgoldenrod;
 }
 
 .label-float label {
-    color: #000000;
+    color: darkgoldenrod;
     position: absolute;
     top: 0;
     left: 0;
@@ -73,7 +71,7 @@ h1 {
 .label-float input:valid+label {
     font-size: 13px;
     margin-top: 0;
-    color: #000000
+    color: darkgoldenrod
 }
 
 button {
@@ -145,7 +143,7 @@ button:hover {
 .label-float-s label {
     color: #000000;
     position: absolute;
-    top: 289px;
+    top: 335px;
     left: 11;
     margin-top: 20px;
     transition: all .3s ease-out;
