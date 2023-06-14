@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +27,7 @@ body {
     width: 400px;
 }
 
+
 h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -46,7 +45,6 @@ h1 {
     min-width: 180px;
     font-size: 16px;
     transition: all .3s ease-out;
-    border-radius: 0;
 }
 
 .label-float {
@@ -126,34 +124,55 @@ button:hover {
     display: none;
 }
 
-.label-float-s input {
-    width: 100%;
-    padding: 10px 1px;
-    margin-top: 8px;
-    display: inline-block;
-    border: 0;
-    border-bottom: 2px solid #0c0c0c;
-    background-color: transparent;
-    outline: none;
+.label-float-n input {
+    width: 10%;
+    margin:  0px 150px 0px;
+    padding: 1px 1px;
+    display: inline-block; 
     min-width: 180px;
     font-size: 16px;
     transition: all .3s ease-out;
     border-radius: 0;
-
 }
-
-.label-float-s label {
+.label-float-n label {
+    top: 476px;
+    margin-top: 0px 0px 50px;
     color: #000000;
     position: absolute;
-    top: 289px;
-    left: 11;
-    margin-top: 20px;
     transition: all .3s ease-out;
 }
 
-.label-float-s input:focus+label,
-.label-float-s input:valid+label {
-    font-size: 13px;
-    margin-top: 20px;
-    color: #000000
+.label-float-f input {
+    width: 10%;
+    margin:  10px 150px 25px;
+    padding: 1px 1px;
+    display: inline-block; 
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+.label-float-f label {
+    top: 511px;
+    margin-top: 0px 0px 50px;
+    color: #000000;
+    position: absolute;
+    transition: all .3s ease-out;
+}
+
+.selectmovimento{
+    width: 46%;
+    margin: 0px 150px 10px;
+    padding: 3px 1px;
+}
+.label-float-m label {
+    top: 440px;
+    margin-top: 0px 0px 50px;
+    color: #000000;
+    position: absolute;
+    transition: all .3s ease-out;
+}
+
+.label-float-d textarea{
+    padding: 10px 26px;
 }

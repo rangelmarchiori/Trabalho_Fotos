@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/artista/artista.css">
+    <title>Artista</title>
+</head>
+
+    <body>
+        <div class='container'>
+            <form>
+                <div class='card'>
+                    <h1> Cadastrar </h1>
+    
+                    <div id='msgError'></div>
+                    <div id='msgSuccess'></div>
+    
+                    <div class="label-float">
+                        <input type="text" id="nome" placeholder=" " required autocomplete="off">
+                        <label id="labelNome" for="nome">Nome:</label>
+                    </div>
+    
+                    <div class="label-float">
+                        <input type="text" id="sobrenome" placeholder=" " required autocomplete="off">
+                        <label id="labelsobrenome" for="sobrenome">Sobrenome:</label>
+                    </div>
+    
+                    <div class="label-float">
+                        <input type="text" id="nomeArtistico" placeholder=" " required autocomplete="off">
+                        <label id="labelNomeArtistico" for="nomeArtistico">Nome Artistico:</label>
+                    </div>
+    
+                    <div class="label-float">
+                        <input type="text" id="cidadeNatal" placeholder=" " required autocomplete="off">
+                        <label id="labelcidadeNatal" for="cidadeNatal">Cidade Natal:</label>
+                    </div>
+    
+                    <div class="label-float-m">
+                        <label id="labelmovimentoArtistico" for="movimentoArtistico">Movimento Artistico:</label>
+                        <select class="selectmovimento" name="selectmovimento" id="selectmovimento" required>
+                            <option value="" selected>Nenhum</option>
+                            <option value="">Renascimento</option>
+                            <option value="">Barroco</option>
+                            <option value="">Romantismo</option>
+                            <option value="">Impressionismo</option>
+                            <option value="">Realismo</option>
+                            <option value="">Naturalismo</option>
+                            <option value="">Simbolismo</option>
+                            <option value="">Fauvismo</option>
+                            <option value="">Cubismo</option>
+                            <option value="">Dadaísmo</option>
+                            <option value="">Surrealismo</option>
+                            <option value="">Modernismo</option>
+                            <option value="">Expressionismo</option>
+                            <option value="">Pós-Modernismo</option>
+                        </select>
+                    </div>
+    
+                    <div class="label-float-n">
+                        <input type="date" id="dataNasc" required placeholder=" ">
+                        <label id="labeldataNasc" for="dataNasc">Data Nascimento:</label>
+                    </div>
+    
+                    <div class="label-float-f">
+                        <input type="date" id="dataFale" placeholder=" ">
+                        <label id="labeldataFale" for="dataFale">Data Falecimento:</label>
+                    </div>
+    
+                    <div class="label-float-d">
+                        <label id="labeldescricao" for="descricao">Descrição:</label>
+                        <textarea id="descricao" rows="4" cols="50"></textarea>
+                    </div>
+    
+                    <div class='justify-center'>
+                        <button onclick='cadastrar()'>Cadastrar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="/js/artista.js"></script>
+    </body>
+
+</html>
