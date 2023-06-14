@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../css/top_nav.css" />
   <link rel="stylesheet" href="../../css/Vip/styleVip.css">
   <link rel="stylesheet" href="../../css/tamanhoDasFontes/tmnhfnt.css">
-  <link rel="stylesheet" href="../../bootstrap-5.3.0-alpha3-dist/css/bootstrap-grid.min.css">
- 
+  
+
   <title>Cadastro Vip</title>
 </head>
 
@@ -37,94 +38,98 @@
     <div class="icon">
       <img src="../../images/iconTelaVip.png" alt="Vip">
       <h1 class="escrever">Cadastro VIP</h1>
-      <p class="aviso">Se torne um VIP</p>
-      <hr class="icon-hr margin-16-bottom margin-8-top" />
+      <p class="aviso">Se torne um VIP</p>  
+      <!-- <hr class="icon-hr margin-16-bottom margin-8-top" /> -->
+
+
+      <div class="bloquinho">
+        <form class="row">
+          <!-- nome -->
+          <div class="col-md-6 mb-3">
+            <label for="disabledTextInput" class="form-label margin-8-bottom">Nome</label>
+            <input type="text" id="Nome" class=" margin-8-bottom" placeholder="" required>
+            <span class="mensagem-erro" data-erro></span>
+          </div>
+
+          <!-- Data de Nascimento -->
+          <div class="col-md-6 mb-3">
+            <label for="disabledTextInput" class="form-label margin-8-bottom">Data de Nascimento</label>
+            <input type="text" id="dtNascimento" class=" margin-8-bottom" placeholder="" required>
+          </div>
+
+          <!-- Cartão -->
+          <div class="col-md-4 mb-3">
+            <label for="disabledTextInput" class="form-label margin-8-bottom">N° Cartão</label>
+            <input type="text" id="cartao" class=" margin-8-bottom" placeholder="" required>
+          </div>
+
+          <!-- Data de Validade -->
+          <div class="col-md-4 mb-3">
+            <label for="disabledTextInput" class="form-label margin-8-bottom">Validade</label>
+            <input type="text" id="dtValidade" class=" margin-8-bottom" placeholder="" required>
+          </div>
+
+          <!-- Codigo de Segurança -->
+          <div class="col-md-4 mb-3">
+            <label for="disabledTextInput" class="form-label margin-8-bottom">CVV</label>
+            <input type="text" id="cdSegurança" class=" margin-8-bottom" placeholder="" required>
+          </div>
+
+          <!-- CPF -->
+          <div class="col-md-12 mb-3">
+            <label for="disabledTextInput" class="form-label margin-8-bottom">CPF</label>
+            <input type="text" id="cpf" class=" margin-8-bottom" placeholder="" required>
+          </div>
+          <!-- BAIRRO  -->
+          <div class="col-md-12 mb-3">
+            <label for="disabledTextInput" class="form-label margin-8-bottom">Bairro</label>
+            <input type="text" id="bairro" class=" margin-8-bottom" placeholder="" required>
+          </div>
+
+          <!-- rua -->
+          <div class="col-md-4 mb-3">
+            <label for="disabledTextInput" class="form-label margin-8-bottom">Rua</label>
+            <input type="text" id="endereco" class=" margin-8-bottom" placeholder="" required>
+          </div>
+          <!-- Numero  -->
+          <div class="col-md-4 mb-3">
+            <label for="disabledTextInput" class="form-label margin-8-bottom">N°</label>
+            <input type="text" id="numero" class=" margin-8-bottom" placeholder="" required>
+          </div>
+          <!-- ceep -->
+          <div class="col-md-4 mb-3">
+            <label for="disabledTextInput" class="form-label margin-8-bottom">CEEP</label>
+            <input type="text" id="ceep" class=" margin-8-bottom" placeholder="" required>
+          </div>
+
+
+          <!-- Selecione o tipo de pagamento -->
+          <div class="mb-3">
+            <label for="disabledSelect" class="form-label">Selecione o tipo de pagamento</label>
+            <select id="slctpPag" class="margin-8-bottom">
+              <option>Selecione a forma de pagamento</option>
+            </select>
+
+            <button type="button" class="btn btn-outline-warning">Cadastrar</button>
+
+          </div>
+
+
+
+
+        </form>
+
+
+
+      </div>
     </div>
 
-    <div class="bloquinho">
-      <form>
-        <!-- nome -->
-        <div class="mb-3">
-          <label for="disabledTextInput" class="form-label margin-8-bottom">Nome</label>
-          <input type="text" id="Nome" class="form-control margin-16-bottom" placeholder="" required >
-          <span class="mensagem-erro" data-erro></span>
-        </div>
-
-        <!-- Data de Nascimento -->
-        <div class="mb-3">
-          <label for="disabledTextInput" class="form-label margin-8-bottom">Data de Nascimento</label>
-          <input type="text" id="dtNascimento" class="form-control margin-16-bottom" placeholder="" required >
-        </div>
-
-        <!-- Cartão -->
-        <div class="mb-3">
-          <label for="disabledTextInput" class="form-label margin-8-bottom">Cartão</label>
-          <input type="text" id="cartao" class="form-control margin-16-bottom" placeholder="" required>
-        </div>
-
-        <!-- Data de Validade -->
-        <div class="mb-3">
-          <label for="disabledTextInput" class="form-label margin-8-bottom">Data de Validade</label>
-          <input type="text" id="dtValidade" class="form-control margin-16-bottom" placeholder="" required>
-        </div>
-
-        <!-- Codigo de Segurança -->
-        <div class="mb-3">
-          <label for="disabledTextInput" class="form-label margin-8-bottom">Codigo de Segurança</label>
-          <input type="text" id="cdSegurança" class="form-control margin-16-bottom" placeholder="" required>
-        </div>
-
-        <!-- CPF -->
-        <div class="mb-3">
-          <label for="disabledTextInput" class="form-label margin-8-bottom">CPF</label>
-          <input type="text" id="cpf" class="form-control margin-16-bottom" placeholder="" required>
-        </div>
-
-        <!-- endereço -->
-        <div class="mb-3">
-          <label for="disabledTextInput" class="form-label margin-8-bottom">endereço</label>
-          <input type="text" id="endereco" class="form-control margin-16-bottom" placeholder="" required>
-        </div>
-
-        <!-- Numero  -->
-        <div class="mb-3">
-          <label for="disabledTextInput" class="form-label margin-8-bottom">N°</label>
-          <input type="text" id="numero" class="form-control margin-16-bottom" placeholder="" required>
-        </div>
-
-        <!-- BAIRRO  -->
-        <div class="mb-3">
-          <label for="disabledTextInput" class="form-label margin-8-bottom">Bairro</label>
-          <input type="text" id="bairro" class="form-control margin-16-bottom" placeholder="" required>
-        </div>
-
-         <!-- ceep -->
-         <div class="mb-3">
-          <label for="disabledTextInput" class="form-label margin-8-bottom">CEEP</label>
-          <input type="text" id="ceep" class="form-control margin-16-bottom" placeholder="" required>
-        </div>
-
-        <!-- Selecione o tipo de pagamento -->
-        <div class="mb-3">
-          <label for="disabledSelect" class="form-label">Selecione o tipo de pagamento</label>
-          <select id="slctpPag" class="form-select">
-            <option>Selecione a forma de pagamento</option>
-          </select>
-        </div>
-
-
-
-      </form>
-
-
-    </div>
-
-    <div >
+    <div>
       <img class="caveira" src="../../images/Caveira.jpg" alt="Caveira">
     </div>
 
   </div>
- 
+
   <script src="../../js/VIP"></script>
 </body>
 
