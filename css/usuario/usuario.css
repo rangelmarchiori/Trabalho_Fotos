@@ -33,6 +33,13 @@ h1 {
     color: darkgoldenrod
 }
 
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 .label-float input {
     width: 100%;
     padding: 5px 5px;
@@ -47,12 +54,12 @@ h1 {
     border-radius: 0;
 }
 
-.label-float {
-    position: relative;
-    padding-top: 13px;
-    margin-top: 5%;
-    margin-bottom: 5%;
+.label-float input[type =date] {
+
+    padding: 10px 1px;
+    margin-top: 8px;
 }
+
 
 .label-float input:focus {
     border-bottom: 2px solid darkgoldenrod;
@@ -76,8 +83,8 @@ h1 {
 
 button {
     background-color: transparent;
-    border-color: #000000;
-    color: #000000;
+    border-color: darkgoldenrod;
+    color: darkgoldenrod;
     padding: 7px;
     font-weight: bold;
     font-size: 12pt;
@@ -90,7 +97,7 @@ button {
 
 button:hover {
     background-color: #ffffff;
-    color: #000000;
+    color: darkgoldenrod;
 }
 
 .justify-center {
@@ -124,34 +131,6 @@ button:hover {
     display: none;
 }
 
-.label-float-s input {
-    width: 100%;
-    padding: 10px 1px;
-    margin-top: 8px;
-    display: inline-block;
-    border: 0;
-    border-bottom: 2px solid #0c0c0c;
-    background-color: transparent;
-    outline: none;
-    min-width: 180px;
-    font-size: 16px;
-    transition: all .3s ease-out;
-    border-radius: 0;
 
-}
 
-.label-float-s label {
-    color: #000000;
-    position: absolute;
-    top: 335px;
-    left: 11;
-    margin-top: 20px;
-    transition: all .3s ease-out;
-}
 
-.label-float-s input:focus+label,
-.label-float-s input:valid+label {
-    font-size: 13px;
-    margin-top: 20px;
-    color: #000000
-}
