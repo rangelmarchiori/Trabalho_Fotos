@@ -63,8 +63,7 @@ p.aviso
 
     display: inline-block;
     padding: 0;
-    margin: 0;
-    width: 50px;
+    margin: 5px;
     height: 20px;
     
 }
@@ -97,7 +96,6 @@ label
 {
     width: 100%;
     float: left;
-    padding-top: 10px;
     margin: 5px;
 
 }
@@ -113,3 +111,8 @@ label
     border: darkgoldenrod 2px solid;
 }
     
+.justify-center
+{
+    text-align: center;
+    margin: 5px;
+}

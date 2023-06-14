@@ -1,43 +1,26 @@
-const input = document.querySelector('[cpf]')
+const form = document.getElementById('form')
+const campos = document.querySelectorAll('.required')
+const spans = document.querySelectorAll('.span-required')
+const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
 
-input.addEventListener('keypress', () =>
+function setError(index)
 {
-    let inputlength = input.value.length
-
-    if(inputlength === 3 ,inputlength === 7)
+    campos[index].style.border = '2px solid #3e3c3c5c'
+    spans[index].style.display = 'block'
+}
+function removeError(index)
+{
+    campos[index].style.border = ''
+    spans[index].style.display = 'none'
+}
+function nameValidate()
+{
+    if(campos[0].value.length < 3)
     {
-        input.value += '.'
+        setError(0)
     }
-    else if(inputlength === 11)
+    else
     {
-        input.value += '-'
-    }
-})
-
-
-const inputs = document.querySelectorAll("[required]")
-inputs.forEach((elemento)=>
-{
-    elemento.addEventListener("blur",(evento)=>
-    {
-        validaCampo(evento.target)
-    })
-})
-
-
-
-function validaCampo(campo)
-{
-    const msnErro = campo.parentNode.querySelector("[data-erro]")
-    if(campo.name === "Nome")
-    {
-       if(campo.value.length<5)
-       {
-        msnErro.textContent = "Digite o nome completo"
-       }
-       else
-       {
-        msnErro.textContent = ""
-       }
+        removeError
     }
 }

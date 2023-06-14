@@ -46,9 +46,9 @@
         <form class="row">
           <!-- nome -->
           <div class="col-md-6 mb-3">
-            <label for="disabledTextInput" class="form-label margin-8-bottom">Nome</label>
-            <input type="text" id="Nome" class=" margin-8-bottom" placeholder="" required>
-            <span class="mensagem-erro" data-erro></span>
+            <label for="disabledTextInput" class="form-label margin-5-bottom">Nome</label>
+            <input type="text" id="Nome" class=" margin-8-bottom required" placeholder="" >
+            <span class="mensagem-erro span-required" data-erro></span>
           </div>
 
           <!-- Data de Nascimento -->
@@ -99,19 +99,23 @@
           <!-- ceep -->
           <div class="col-md-4 mb-3">
             <label for="disabledTextInput" class="form-label margin-8-bottom">CEEP</label>
-            <input type="text" id="ceep" class=" margin-8-bottom" placeholder="" required>
+            <input type="text" id="ceep" class=" margin-5-top" placeholder="" required>
           </div>
 
 
           <!-- Selecione o tipo de pagamento -->
           <div class="mb-3">
-            <label for="disabledSelect" class="form-label">Selecione o tipo de pagamento</label>
-            <select id="slctpPag" class="margin-8-bottom">
+            <label for="disabledSelect" class="form-label margin-5-top">Selecione o tipo de pagamento</label>
+            <select id="slctpPag" class="margin-5-top">
               <option>Selecione a forma de pagamento</option>
             </select>
 
-            <button type="button" class="btn btn-outline-warning">Cadastrar</button>
+            <div class="justify-center">
 
+              <button type="button" class="btn btn-outline-warning">Cadastrar</button>
+
+            </div>
+            
           </div>
 
 
@@ -130,7 +134,8 @@
 
   </div>
 
-  <script src="../../js/VIP"></script>
+  <script src="../../js/VIP">
+  </script>
 </body>
 
 </html>
