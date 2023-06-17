@@ -4,83 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/artista/artista.css">
+    <link rel="stylesheet" href="../css/formularios/artista.css">
     <link rel="stylesheet" href="../css/top_nav.css">
     <title>Artista</title>
 </head>
 
-    <body>
-        <div class='container'>
-            <form>
-                <div class='card'>
-                    <h1> Cadastrar </h1>
-    
-                    <div id='msgError'></div>
-                    <div id='msgSuccess'></div>
-    
-                    <div class="label-float">
-                        <input type="text" id="nome" placeholder=" " required autocomplete="off">
-                        <label id="labelNome" for="nome">Nome:</label>
-                    </div>
-    
-                    <div class="label-float">
-                        <input type="text" id="sobrenome" placeholder=" " required autocomplete="off">
-                        <label id="labelsobrenome" for="sobrenome">Sobrenome:</label>
-                    </div>
-    
-                    <div class="label-float">
-                        <input type="text" id="nomeArtistico" placeholder=" " required autocomplete="off">
-                        <label id="labelNomeArtistico" for="nomeArtistico">Nome Artistico:</label>
-                    </div>
-    
-                    <div class="label-float">
-                        <input type="text" id="cidadeNatal" placeholder=" " required autocomplete="off">
-                        <label id="labelcidadeNatal" for="cidadeNatal">Cidade Natal:</label>
-                    </div>
-    
-                    <div class="label-float-m">
-                        <label id="labelmovimentoArtistico" for="movimentoArtistico">Movimento Artistico:</label>
-                        <select class="selectmovimento" name="movimentoArtistico" id="movimentoArtistico" required>
-                            <option value="" selected>Nenhum</option>
-                            <option value="">Renascimento</option>
-                            <option value="">Barroco</option>
-                            <option value="">Romantismo</option>
-                            <option value="">Impressionismo</option>
-                            <option value="">Realismo</option>
-                            <option value="">Naturalismo</option>
-                            <option value="">Simbolismo</option>
-                            <option value="">Fauvismo</option>
-                            <option value="">Cubismo</option>
-                            <option value="">Dadaísmo</option>
-                            <option value="">Surrealismo</option>
-                            <option value="">Modernismo</option>
-                            <option value="">Expressionismo</option>
-                            <option value="">Pós-Modernismo</option>
-                        </select>
-                    </div>
-    
-                    <div class="label-float-n">
-                        <input type="date" id="dataNasc" required placeholder=" ">
-                        <label id="labeldataNasc" for="dataNasc">Data Nascimento:</label>
-                    </div>
-    
-                    <div class="label-float-f">
-                        <input type="date" id="dataFale" placeholder=" ">
-                        <label id="labeldataFale" for="dataFale">Data Falecimento:</label>
-                    </div>
-    
-                    <div class="label-float-d">
-                        <label id="labeldescricao" for="descricao">Descrição:</label>
-                        <textarea id="descricao" rows="4" cols="50"></textarea>
-                    </div>
-    
-                    <div class='justify-center'>
-                        <button onclick='cadastrar()'>Cadastrar</button>
-                    </div>
-                </div>
-            </form>
+<body>
+    <header>
+        <div class="div_logo">
+            <img src="../images/simbolo_logo.png" alt="logo" class="logo" />
+            <h2>DarkArt</h2>
         </div>
-        <script src="../js/artista.js"></script>
-    </body>
+
+        <!--Cabeçalho logo-->
+        <nav class="topnav">
+            <!--Menu-->
+            <a href="../index.html">Home</a>
+            <a href="../html/quem_somos.html">Quem somos?</a>
+            <a href="../html/galeria.html">Galeria</a>
+            <a href="../html/contato.html">Contato</a>
+            <a href="../html/localizacao.html">Localização</a>
+            <a href="../html/exposicao.html">Exposição</a>
+        </nav>
+    </header>
+    <div class='container'>
+
+        <div class='card'>
+            <h1> Cadastrar </h1>
+
+            <div id='msgError'></div>
+            <div id='msgSuccess'></div>
+
+            <div class="label-float">
+                <input type="text" id="nome" placeholder=" " required autocomplete="off">
+                <label id="labelNome" for="nome">Nome:</label>
+            </div>
+
+            <div class="label-float">
+                <input type="text" id="sobrenome" placeholder=" " required autocomplete="off">
+                <label id="labelsobrenome" for="sobrenome">Sobrenome:</label>
+            </div>
+
+            <div class="label-float">
+                <input type="text" id="nomeArtistico" placeholder=" " required autocomplete="off">
+                <label id="labelNomeArtistico" for="nomeArtistico">Nome Artístico:</label>
+            </div>
+
+            <div class="label-float">
+                <input type="text" id="cidadeNatal" placeholder=" " required autocomplete="off">
+                <label id="labelcidadeNatal" for="cidadeNatal">Cidade Natal:</label>
+            </div>
+
+            <div class="label-float">
+                <input type="date" id="dataNasc" required placeholder=" ">
+                <label id="labeldataNasc" for="dataNasc">Data Nascimento:</label>
+            </div>
+
+            <div class="label-float">
+                <input type="date" id="dataFale" required =" ">
+                <label id="labeldataFale" for="dataFale">Data Falecimento:</label>
+            </div>
+
+            <div class="label-float">
+                <label id="labelmovimentoArtistico" for="movimentoArtistico">Movimento Artístico:</label>
+                <select class="selectmovimento" name="movimentoArtistico" id="movimentoArtistico" required>
+                    <option value="" selected>Nenhum</option>
+                    <option value="Renascimento">Renascimento</option>
+                    <option value="Barroco">Barroco</option>
+                    <option value="Romantismo">Romantismo</option>
+                    <option value="Impressionismo">Impressionismo</option>
+                    <option value="Realismo">Realismo</option>
+                    <option value="Naturalismo">Naturalismo</option>
+                    <option value="Simbolismo">Simbolismo</option>
+                    <option value="Fauvismo">Fauvismo</option>
+                    <option value="Cubismo">Cubismo</option>
+                    <option value="Dadaísmo">Dadaísmo</option>
+                    <option value="Surrealismo">Surrealismo</option>
+                    <option value="Modernismo">Modernismo</option>
+                    <option value="Expressionismo">Expressionismo</option>
+                    <option value="Pós-Modernismo">Pós-Modernismo</option>
+                    <option value="Renascimento">Não faço parte de nenhum</option>
+                </select>
+            </div>
+
+
+            <div class="label-float-d">
+                <label id="labeldescricao" for="descricao">Descrição:</label>
+                <textarea id="descricao" rows="4" cols="50"></textarea>
+            </div>
+
+            <div class='justify-center'>
+                <button onclick='cadastrar()'>Cadastrar</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="../js/artista.js"></script>
+</body>
 
 </html>

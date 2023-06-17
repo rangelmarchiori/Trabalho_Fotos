@@ -1,11 +1,11 @@
 
 const fields = [
     { input: document.querySelector('#nome'), label: document.querySelector('#labelNome'), minLength: 3 },
-    { input: document.querySelector('#sobrenome'), label: document.querySelector('#labelsobrenome'), minLength: 3 },
+    { input: document.querySelector('#sobrenome'), label: document.querySelector('#labelsobrenome'), minLength: 1 },
     { input: document.querySelector('#nomeArtistico'), label: document.querySelector('#labelNomeArtistico'), minLength: 3 },
     { input: document.querySelector('#cidadeNatal'), label: document.querySelector('#labelcidadeNatal'), minLength: 6 },
     { input: document.querySelector('#movimentoArtistico'), label: document.querySelector('#labelmovimentoArtistico') },
-    { input: document.querySelector('#dataNasc'), label: document.querySelector('#labeldataNasc'), minLength: 7},
+    { input: document.querySelector('#dataNasc'), label: document.querySelector('#labeldataNasc'), minLength: 7 },
     { input: document.querySelector('#descricao'), label: document.querySelector('#labeldescricao') }
 ];
 
@@ -56,9 +56,9 @@ function validateSobrenome() {
 }
 
 function validatenomeArtistico() {
-    if (nomeArtistico.value.length <= 2) {
+    if (nomeArtistico.value.length <= 0) {
         labelNomeArtistico.setAttribute('style', 'color: red');
-        labelNomeArtistico.innerHTML = 'Nome Artistico: *Insira no mínimo 3 caracteres';
+        labelNomeArtistico.innerHTML = 'Nome Artistico: *Insira no mínimo 1 caracteres';
         nomeArtistico.setAttribute('style', 'border-color: red');
         return false;
     } else {
@@ -97,33 +97,13 @@ function validatedataNasc() {
         return true;
     }
 }
-
-
-
-function validatemovimentoArtistico() {
-    if (movimentoArtistico.value.length <= 9) {
-        labelmovimentoArtistico.setAttribute('style', 'color: red');
-        labelmovimentoArtistico.innerHTML = 'Movimento Artistico:';
-        movimentoArtistico.setAttribute('style', 'border-color: red');
-        return false;
-    } else {
-        labelmovimentoArtistico.setAttribute('style', 'color: green');
-        labelmovimentoArtistico.innerHTML = 'Movimento Artistico:';
-        movimentoArtistico.setAttribute('style', 'border-color: green');
-        return true;
-    }
-}
-
 function cadastrar() {
     const validations = [
         validateNome(),
         validateSobrenome(),
         validatenomeArtistico(),
         validatecidadeNatal(),
-        validatedataNasc(),
-        validateDataFale(),
-        validatedescricao(),
-        movimentoArtistico()
+        validatedataNasc()
     ];
 
     const isValid = validations.every(validation => validation);
@@ -135,26 +115,25 @@ function cadastrar() {
             nomeCad: nome.value,
             sobrenomeCad: sobrenome.value,
             nomeArtisticoCad: nomeArtistico.value,
-            cidadeNatalCad: celular.value,
-            dataNascCad: dataNasc.value,
-            descricaoCad: descricao.value
+            cidadeNatalCad: cidadeNatal.value,
+            dataNascCad: dataNasc.value
         });
 
         localStorage.setItem('listaUser', JSON.stringify(listaUser));
 
-        msgSuccess.setAttribute('style', 'display: block');
+        msgSuccess.style.display = 'block';
         msgSuccess.innerHTML = '<strong>Cadastrando usuário...</strong>';
-        msgError.setAttribute('style', 'display: none');
+        msgError.style.display = 'none';
         msgError.innerHTML = '';
-z
+
         setTimeout(() => {
             window.location.href = 'http://127.0.0.1:5502/index.html';
         }, 3000);
     } else {
-        msgError.setAttribute('style', 'display: block');
+        msgError.style.display = 'block';
         msgError.innerHTML = '<strong>Preencha todos os campos corretamente antes de cadastrar</strong>';
         msgSuccess.innerHTML = '';
-        msgSuccess.setAttribute('style', 'display: none');
+        msgSuccess.style.display = 'none';
     }
 }
 
@@ -176,12 +155,4 @@ dataNasc.addEventListener('input', (event) => {
 
 cidadeNatal.addEventListener('input', (event) => {
     validatecidadeNatal();
-});
-
-descricao.addEventListener('input', (event) => {
-    validatedescricao();
-});
-
-movimentoArtistico.addEventListener('input', (event) => {
-    validatedescricao();
 });

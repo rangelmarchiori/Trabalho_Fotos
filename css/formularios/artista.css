@@ -34,6 +34,22 @@ h1 {
     color: darkgoldenrod
 }
 
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float label {
+    color: darkgoldenrod;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
 .label-float input {
     width: 100%;
     padding: 5px 5px;
@@ -47,26 +63,15 @@ h1 {
     transition: all .3s ease-out;
 }
 
-.label-float {
-    position: relative;
-    padding-top: 13px;
-    margin-top: 5%;
-    margin-bottom: 5%;
+.label-float input[type =date] 
+{
+    padding: 10px 1px;
+    margin-top: 8px;
 }
 
 .label-float input:focus {
     border-bottom: 2px solid #000000;
 }
-
-.label-float label {
-    color: darkgoldenrod;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 13px;
-    transition: all .3s ease-out;
-}
-
 
 .label-float input:focus+label,
 .label-float input:valid+label {
@@ -117,59 +122,17 @@ button:hover {
     display: none;
 }
 
-.label-float-n input {
-    width: 10%;
-    margin:  0px 150px 0px;
-    padding: 1px 1px;
-    display: inline-block; 
-    min-width: 180px;
-    font-size: 16px;
-    transition: all .3s ease-out;
-    border-radius: 0;
-}
-.label-float-n label {
-    top: 476px;
-    margin-top: 0px 0px 50px;
-    color: darkgoldenrod;
-    position: absolute;
-    transition: all .3s ease-out;
-}
-
-.label-float-f input {
-    width: 10%;
-    margin:  10px 150px 25px;
-    padding: 1px 1px;
-    display: inline-block; 
-    min-width: 180px;
-    font-size: 16px;
-    transition: all .3s ease-out;
-    border-radius: 0;
-}
-.label-float-f label {
-    top: 511px;
-    margin-top: 0px 0px 50px;
-    color: darkgoldenrod;
-    position: absolute;
-    transition: all .3s ease-out;
-}
-
 .selectmovimento{
     width: 46%;
     margin: 0px 150px 10px;
     padding: 3px 1px;
 }
-.label-float-m label {
-    top: 440px;
-    margin-top: 0px 0px 50px;
-    color: darkgoldenrod;
-    position: absolute;
-    transition: all .3s ease-out;
-}
+
 
 .label-float-d label{
     color: darkgoldenrod;
 }
 
 .label-float-d textarea {
-    padding: 10px 18px;
+    padding: 10px 27px;
 }
