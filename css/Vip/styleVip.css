@@ -116,3 +116,19 @@ label
     text-align: center;
     margin: 5px;
 }
+
+/* 
+.input-control.success input
+{
+    border-color: green;
+}
+.input-control.error input
+{
+    border-color: red;
+}
+.input-control
+{
+    color: red;
+    font-size: 9px;
+    height: 25px;
+} */

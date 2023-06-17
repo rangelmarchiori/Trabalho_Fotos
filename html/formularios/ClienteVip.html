@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="../../css/top_nav.css" />
   <link rel="stylesheet" href="../../css/Vip/styleVip.css">
   <link rel="stylesheet" href="../../css/tamanhoDasFontes/tmnhfnt.css">
-  
+
+  <script src="../../js/VIP"></script>
 
   <title>Cadastro Vip</title>
 </head>
@@ -20,17 +21,18 @@
     <div class="div_logo">
       <img src="../../images/simbolo_logo.png" alt="logo" class="logo" />
       <h2>DarkArt</h2>
-    </div>
+    </div> 
     <!--Cabeçalho logo-->
-    <nav class="topnav">
-      <!--Menu-->
+     <nav class="topnav">
       <a href="../../index.html">Home</a>
       <a href="../quem_somos.html">Quem somos?</a>
       <a href="../galeria.html">Galeria</a>
       <a href="../contato.html">Contato</a>
       <a href="../localizacao.html">Localização</a>
       <a href="../exposicao.html">Exposição</a>
+  
     </nav>
+    
   </header>
 
   <!-- restante da pagina -->
@@ -38,17 +40,17 @@
     <div class="icon">
       <img src="../../images/iconTelaVip.png" alt="Vip">
       <h1 class="escrever">Cadastro VIP</h1>
-      <p class="aviso">Se torne um VIP</p>  
+      <p class="aviso">Se torne um VIP</p>
       <!-- <hr class="icon-hr margin-16-bottom margin-8-top" /> -->
 
 
       <div class="bloquinho">
-        <form class="row">
+        <form class="row" id="form">
           <!-- nome -->
-          <div class="col-md-6 mb-3">
+          <div class="col-md-6 mb-3 ">
             <label for="disabledTextInput" class="form-label margin-5-bottom">Nome</label>
-            <input type="text" id="Nome" class=" margin-8-bottom required" placeholder="" >
-            <span class="mensagem-erro span-required" data-erro></span>
+            <input type="text" id="nome" class=" margin-8-bottom" placeholder="">
+
           </div>
 
           <!-- Data de Nascimento -->
@@ -115,7 +117,7 @@
               <button type="button" class="btn btn-outline-warning">Cadastrar</button>
 
             </div>
-            
+
           </div>
 
 
@@ -134,8 +136,7 @@
 
   </div>
 
-  <script src="../../js/VIP">
-  </script>
+
 </body>
 
 </html>

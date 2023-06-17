@@ -1,26 +1,72 @@
-const form = document.getElementById('form')
-const campos = document.querySelectorAll('.required')
-const spans = document.querySelectorAll('.span-required')
-const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
+// const form = document.getElementById('form')
+// const campos = document.querySelectorAll('.required')
+// const spans = document.querySelectorAll('.span-required')
+// const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
 
-function setError(index)
-{
-    campos[index].style.border = '2px solid #3e3c3c5c'
-    spans[index].style.display = 'block'
-}
-function removeError(index)
-{
-    campos[index].style.border = ''
-    spans[index].style.display = 'none'
-}
-function nameValidate()
-{
-    if(campos[0].value.length < 3)
-    {
-        setError(0)
-    }
-    else
-    {
-        removeError
-    }
-}
+// function setError(index)
+// {
+//     campos[index].style.border = '2px solid #3e3c3c5c'
+//     spans[index].style.display = 'block'
+// }
+// function removeError(index)
+// {
+//     campos[index].style.border = ''
+//     spans[index].style.display = 'none'
+// }
+// function nameValidate()
+// {
+//     if(campos[0].value.length < 3)
+//     {
+//         setError(0)
+//     }
+//     else
+//     {
+//         removeError
+//     }
+// }
+
+// const form = document.getElementById('form');
+// const nome = document.getElementById('nome');
+
+// form.addEventListener('submit' , e =>
+// {
+//     e.preventDefault();
+
+//     validateInputs();
+// });
+
+// const setError = (element,message) =>
+// {
+//     const inputControl = element.parentElement;
+//     const errorDisplay = inputControl.querySelector('.error');
+
+//     errorDisplay.innerText = message;
+//     inputControl.classList.add('error');
+//     inputControl.classList.remove('success');
+// };
+
+// const setSucess = element =>
+// {
+//     const inputControl = element.parentElement;
+//     const errorDisplay = inputControl.querySelector('.error');
+
+//     errorDisplay.innerText = '';
+//     inputControl.classList.add('success');
+//     inputControl.classList.remove('error');
+// };
+
+// const validateInputs = () =>
+// {
+//     console.log(nomeValue); 
+//     const nomeValue =  nome.value.trim();
+
+//     if(nomeValue === '')
+//     {
+//         setError(nome, 'Digite um nome');
+//     }
+//     else
+//     {
+//         setSucess(nome);
+//     }
+// };
+

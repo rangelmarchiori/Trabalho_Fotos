@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-image: url("../../images/fundo.jpg");
+    background-size: cover;
+}
+
+.Bloco
+{
+    background-color: rgba(0, 0, 0, 0.63);
+    border-radius: 10px;
+    margin: 25pt;
+    width: 1200px;
+    height: 700px;
+    padding: 4px;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-family: Arial;
+    box-shadow: 0 4px 50px 20px #000;
+}
+.bloquinho
+{
+    width: 100%;
+    float: left;
+    margin: 5px;
+
+}
+.espaço 
+{
+    justify-content: right;
+    border: darkgoldenrod 2px;
+    margin: 0px;
+    padding: 0px;
+    
+}
