@@ -23,16 +23,91 @@ body
 }
 .bloquinho
 {
-    width: 100%;
+    width: 80%;
     float: left;
     margin: 5px;
 
 }
 .espaço 
 {
-    justify-content: right;
+    justify-content: center;
     border: darkgoldenrod 2px;
     margin: 0px;
     padding: 0px;
     
+}
+
+/* inputs   */
+input, select
+{
+    background-color: rgba(103, 99, 99, 0.852);
+    border-radius: 8px;
+    height: 25px;
+    border: none;
+    text-indent: 16px;
+    width: 100%;
+}
+input:focus
+{
+    background:#3e3c3c5c;
+    outline-width: 0;
+}
+label
+{
+    color: darkgoldenrod;
+    font-size: 20px;
+    display: block;
+}
+
+.icon
+{
+    padding: 0px 45px 45px 45px;
+    width: 40%;
+    height: 50px;
+    margin: 0px 5px 0px 0px;
+    display: block;
+    float: left;
+
+}
+.icon-hr
+{
+    margin: 0;
+    padding: 0;
+    width: 27px;
+    border: 3px solid darkgoldenrod;
+}
+
+/* paragrafo do aviso */
+p
+{
+    color: darkgoldenrod;
+    font-size: 16px;
+
+}
+
+p.aviso 
+{
+    color: darkgoldenrod;
+    font-size: 20px;
+
+}
+
+.descricao
+{
+    height: 150px;
+}
+
+/* .justify-center
+{
+    text-align: center;
+    margin: 5px;
+} */
+
+.escrever 
+{
+    display: inline-block;
+    padding: 0;
+    margin: 5px;
+    height: 20px;
+
 }
