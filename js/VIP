@@ -25,48 +25,52 @@
 //     }
 // }
 
-// const form = document.getElementById('form');
-// const nome = document.getElementById('nome');
+const form = document.getElementById('#form');
+const nome = document.getElementById('#nome');
 
-// form.addEventListener('submit' , e =>
-// {
-//     e.preventDefault();
+form.addEventListener('submit' , e =>
+{
+    e.preventDefault();
 
-//     validateInputs();
-// });
+    validateInputs();
+});
 
-// const setError = (element,message) =>
-// {
-//     const inputControl = element.parentElement;
-//     const errorDisplay = inputControl.querySelector('.error');
+const setError = (element,message) =>
+{
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
 
-//     errorDisplay.innerText = message;
-//     inputControl.classList.add('error');
-//     inputControl.classList.remove('success');
-// };
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success');
+};
 
-// const setSucess = element =>
-// {
-//     const inputControl = element.parentElement;
-//     const errorDisplay = inputControl.querySelector('.error');
+const setSucess = element =>
+{
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
 
-//     errorDisplay.innerText = '';
-//     inputControl.classList.add('success');
-//     inputControl.classList.remove('error');
-// };
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+};
 
-// const validateInputs = () =>
-// {
-//     console.log(nomeValue); 
-//     const nomeValue =  nome.value.trim();
+const validateInputs = () =>
+{
+    console.log(nomeValue); 
+    const nomeValue =  nome.value.trim();
 
-//     if(nomeValue === '')
-//     {
-//         setError(nome, 'Digite um nome');
-//     }
-//     else
-//     {
-//         setSucess(nome);
-//     }
-// };
+    if(nomeValue === '')
+    {
+        setError(nome, 'Digite um nome');
+    }
+    else
+    {
+        setSucess(nome);
+    }
+};
+
+// const form = document.addEventListener('form');
+// const nome = document.addEventListener('nome');
+
 

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../../css/Vip/styleVip.css">
   <link rel="stylesheet" href="../../css/tamanhoDasFontes/tmnhfnt.css">
 
-  <script src="../../js/VIP"></script>
+  
 
   <title>Cadastro Vip</title>
 </head>
@@ -21,7 +21,7 @@
     <div class="div_logo">
       <img src="../../images/simbolo_logo.png" alt="logo" class="logo" />
       <h2>DarkArt</h2>
-    </div> 
+    </div>
     <!--Cabeçalho logo-->
      <nav class="topnav">
       <a href="../../index.html">Home</a>
@@ -49,8 +49,8 @@
           <!-- nome -->
           <div class="col-md-6 mb-3 ">
             <label for="disabledTextInput" class="form-label margin-5-bottom">Nome</label>
-            <input type="text" id="nome" class=" margin-8-bottom" placeholder="">
-
+            <input type="text" id="nome" class=" margin-8-bottom" placeholder="" required autocomplete="off">
+            <span class="error"></span>
           </div>
 
           <!-- Data de Nascimento -->
@@ -135,7 +135,7 @@
     </div>
 
   </div>
-
+  <script src="../../js/VIP"></script>
 
 </body>
 
