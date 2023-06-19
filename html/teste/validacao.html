@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <title>Validação</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main class="container">
+
+        <form>
+            <div class="row g-3">
+                <div class="col-12">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" name="nome" id="nome" required maxlength="100" minlength="5"
+                        class="form-control">
+                    <span class="mensagemErro" data-erro></span>
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu email..." name="email" required>
+                    <span class="mensagem-erro" data-erro></span>
+                </div>
+                <div class="col-md-6">
+                    <label for="nascimento" class="form-label">Nascimento</label>
+                    <input type="date" name="nascimento" id="nascimento" class="form-control" required>
+                    <span class="mensagem-erro" data-erro></span>
+                </div>
+                <div class="col-md-6">
+                    <label for="celular" class="form-label">Celular</label>
+                    <input type="text" name="celular" id="celular" class="form-control" required maxlength="15" minlength="11">
+                    <span class="mensagem-erro" data-erro></span>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="../js/validacao.js" type="module"></script>
+</body>
+
+</html>
